@@ -1,0 +1,10 @@
+{
+  "theme.navbar.title": {
+    "message": "Gobel Power",
+    "description": "The title in the navbar"
+  },
+  "theme.footer.copyright": {
+    "message": "Copyright © 2026 Gobel Power. All rights reserved.",
+    "description": "The footer copyright"
+  }
+}
