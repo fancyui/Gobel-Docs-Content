@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
+sidebar_label: Datasheet
 ---
+
 
 # LV-12V-100Ah Low Voltage Battery Datasheet
 

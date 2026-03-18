@@ -1,6 +1,3 @@
----
-sidebar_position: 3
----
 
 # HV-48V-200Ah Installation Guide
 

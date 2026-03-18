@@ -1,6 +1,3 @@
----
-sidebar_position: 4
----
 
 # HV-48V-200Ah User Manual
 

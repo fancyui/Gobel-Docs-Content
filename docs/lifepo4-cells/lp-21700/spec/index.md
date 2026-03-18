@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
+sidebar_label: Technical Specifications
 ---
+
 
 # LP-21700 Technical Specifications
 

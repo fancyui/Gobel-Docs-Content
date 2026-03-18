@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 
 # HV-48V-200Ah High Voltage Battery Datasheet
 

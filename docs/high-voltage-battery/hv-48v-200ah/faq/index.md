@@ -1,6 +1,3 @@
----
-sidebar_position: 5
----
 
 # HV-48V-200Ah FAQ
 

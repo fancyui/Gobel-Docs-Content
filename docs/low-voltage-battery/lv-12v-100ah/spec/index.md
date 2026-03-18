@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
+sidebar_label: Technical Specifications
 ---
+
 
 # LV-12V-100Ah Technical Specifications
 
