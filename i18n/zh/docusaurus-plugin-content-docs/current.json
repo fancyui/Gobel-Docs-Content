@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Current",
+    "description": "The label for version current"
+  },
+  "sidebar.cellsSidebar.category.LP-21700": {
+    "message": "LP-21700",
+    "description": "The label for category 'LP-21700' in sidebar 'cellsSidebar'"
+  },
+  "sidebar.cellsSidebar.category.LP-21710": {
+    "message": "LP-21710",
+    "description": "The label for category 'LP-21710' in sidebar 'cellsSidebar'"
+  },
+  "sidebar.lowVoltageSidebar.category.LV-12V-100AH": {
+    "message": "LV-12V-100AH",
+    "description": "The label for category 'LV-12V-100AH' in sidebar 'lowVoltageSidebar'"
+  },
+  "sidebar.highVoltageSidebar.category.HV-48V-200AH": {
+    "message": "HV-48V-200AH",
+    "description": "The label for category 'HV-48V-200AH' in sidebar 'highVoltageSidebar'"
+  }
+}

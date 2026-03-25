@@ -1,0 +1,30 @@
+{
+  "logo.alt": {
+    "message": "Gobel Power Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Low Voltage": {
+    "message": "低压电池",
+    "description": "Navbar item with label Low Voltage"
+  },
+  "item.label.High Voltage": {
+    "message": "高压电池",
+    "description": "Navbar item with label High Voltage"
+  },
+  "item.label.DIY Kits": {
+    "message": "DIY 套件",
+    "description": "Navbar item with label DIY Kits"
+  },
+  "item.label.BMS": {
+    "message": "BMS",
+    "description": "Navbar item with label BMS"
+  },
+  "item.label.Cells": {
+    "message": "电芯",
+    "description": "Navbar item with label Cells"
+  },
+  "item.label.Others": {
+    "message": "其他",
+    "description": "Navbar item with label Others"
+  }
+}
