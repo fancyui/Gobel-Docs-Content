@@ -24,8 +24,9 @@ Answer: There are two methods:
 
 ### How are the BMS units physically connected to each other in parallel operation?
 Answer: When in parallel, use standard network cables to connect the RS485B and RS485C ports of each BMS in series (daisy-chain method).
-> [!IMPORTANT]
+> :::important
 > **Note**: RS485B is the output port, and RS485C is the input port. The connection method is: RS485B of the first unit connects to RS485C of the second unit, and so on.
+> :::important
 
 ### What happens if the BMS fails to communicate with the inverter?
 Answer: If the inverter is set to "Lithium Battery Mode", it must establish normal communication with the BMS to operate. Once communication is interrupted or fails, the inverter will trigger an error alarm (Error) and stop drawing power from or charging the battery.
