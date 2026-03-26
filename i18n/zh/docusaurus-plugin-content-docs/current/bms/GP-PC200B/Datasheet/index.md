@@ -2043,20 +2043,20 @@ BMS 可以通过 RS232 接口与上位机进行通讯，从而可通过上位机
 
 <table>
   <tr>
-    <td><img src="./images/page14_img1.png" width="200" /></td>
-    <td><img src="./images/page14_img2.png" width="200" /></td>
+    <td><img src={require('./images/page14_img1.png').default} /></td>
+    <td><img src={require('./images/page14_img2.png').default} /></td>
   </tr>
   <tr>
-    <td>CAN 和 RS485 接口</td>
-    <td>干接点</td>
+    <td>CAN and RS485 Interface</td>
+    <td>Dry Contact</td>
   </tr>
   <tr>
-    <td><img src="./images/page14_img3.png" width="200" /></td>
-    <td><img src="./images/page14_img4.png" width="200" /></td>
+    <td><img src={require('./images/page14_img3.png').default} /></td>
+    <td><img src={require('./images/page14_img4.png').default} /></td>
   </tr>
   <tr>
-    <td>并联通讯端口</td>
-    <td>RS232 通讯接口</td>
+    <td>Parallel Communication Port</td>
+    <td>RS232 Communication Interface</td>
   </tr>
 </table>
 
