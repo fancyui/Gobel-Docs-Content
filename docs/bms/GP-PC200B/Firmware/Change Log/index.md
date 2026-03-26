@@ -3,7 +3,9 @@
 =======================
 
 **Hardware Versions:**
+
 Main Board: **P16S200A-51706-1.2**
+
 Communication Board: **IOB-31834B-1.0**
 
 =======================
@@ -13,24 +15,41 @@ Communication Board: **IOB-31834B-1.0**
 - Fixed abnormal voltage detection.
 
 - Updated active balancing logic:
+
 	a. Resting mode activation conditions: CVmax &gt; balancing activation voltage and voltage difference &gt; 30 mV.
+
 	b. Resting mode deactivation conditions: CVmax &lt; balancing activation voltage or voltage difference &lt; 20 mV.
+
 	c. Charge/discharge activation conditions: CVmax &gt; balancing activation voltage and voltage difference &gt; 50 mV.
+
 	d. Charge/discharge deactivation conditions: CVmax &lt; balancing activation voltage or voltage difference &lt; 40 mV.
+
 	e. For every 500 cycles of activation/deactivation, increase the threshold by 1 mV, up to a maximum of 20 mV.
+
 	f. Maximum run time per activation is 1 hour; after deactivation, a 10-minute interval is required before restarting.
+
 	g. Apply a 10-second filter to voltage data.
+
 	h. Do not activate if the average cell voltage is greater than 3625 mV.
+
 	j. Do not activate if voltage difference exceeds 1000 mV.
+
 	k. Do not activate during high-temperature alarm.
+
 	l. Do not activate when a fault is present.
+
 	m. Do not activate during temperature protection.
+
 	n. Overvoltage protection allows activation; undervoltage protection does not.
+
 	o. Removed.
+
 	p. Current &lt; 2 A is considered resting.
+
 	q. Evaluate activation or switching balancing cells every 1 minute.
 
 - Modified dynamic SOC protection logic (currently disabled): 
+
 	After protection is triggered, the discharge current request changes from 0 A to 10 A.
 
 
@@ -38,6 +57,7 @@ Communication Board: **IOB-31834B-1.0**
 ### P41755V110-51706-1.30-000
 
 - Supports 63 battery packs in parallel; setting all to 000000 enables automatic dialing.
+
 - Modified WIFI-RS232 protocol: the “normal RTN” in returned data is changed to the requested CID2.
 
 
