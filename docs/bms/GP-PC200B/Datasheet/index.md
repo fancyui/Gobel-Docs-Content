@@ -402,22 +402,22 @@ BMS (Battery Management System) is a system that monitors and controls battery s
   </tr>
   <tr>
     <td>Operating Temperature</td>
-    <td>-20 ~ 60</td>
+    <td>-20 /~ 60</td>
     <td>°C</td>
   </tr>
   <tr>
     <td>Storage Temperature</td>
-    <td>-20 ~ 75</td>
+    <td>-20 /~ 75</td>
     <td>°C</td>
   </tr>
   <tr>
     <td>Operating Humidity</td>
-    <td>10 ~ 85</td>
+    <td>10 /~ 85</td>
     <td>%RH</td>
   </tr>
   <tr>
     <td>Storage Humidity</td>
-    <td>10 ~ 85</td>
+    <td>10 /~ 85</td>
     <td>%RH</td>
   </tr>
 </table>
@@ -1266,7 +1266,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td>Capacity (%)</td>
-    <td>0% ~ 17%</td>
+    <td>0% /~ 17%</td>
     <td>Off</td>
     <td>Off</td>
     <td>Off</td>
@@ -1282,7 +1282,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td></td>
-    <td>18% ~ 33%</td>
+    <td>18% /~ 33%</td>
     <td>Off</td>
     <td>Off</td>
     <td>Off</td>
@@ -1298,7 +1298,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td></td>
-    <td>34% ~ 50%</td>
+    <td>34% /~ 50%</td>
     <td>Off</td>
     <td>Off</td>
     <td>Off</td>
@@ -1314,7 +1314,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td></td>
-    <td>51% ~ 66%</td>
+    <td>51% /~ 66%</td>
     <td>Off</td>
     <td>Off</td>
     <td>Flash 2</td>
@@ -1330,7 +1330,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td></td>
-    <td>67% ~ 83%</td>
+    <td>67% /~ 83%</td>
     <td>Off</td>
     <td>Flash 2</td>
     <td>On</td>
@@ -1346,7 +1346,7 @@ Table 2 Capacity Indicator Description
   </tr>
   <tr>
     <td></td>
-    <td>84% ~ 100%</td>
+    <td>84% /~ 100%</td>
     <td>Flash 2</td>
     <td>On</td>
     <td>On</td>
@@ -1402,9 +1402,9 @@ Table 3 LED Flash Description
 
 ### 6.3 Button Operation
 
-When BMS is in sleep state, press the button (3~6S) and release, the protection board is activated, and the LED indicator lights start from "RUN" and light up sequentially for 0.5 seconds each.
-When BMS is in active state, press the button (3~6S) and release, the protection board enters sleep mode, and the LED indicator lights start from the lowest battery level and light up sequentially for 0.5 seconds each.
-When BMS is in active state, press the button (6~10S) and release, the protection board is reset, and all LED lights light up simultaneously for 1.5 seconds.
+When BMS is in sleep state, press the button (3/~6S) and release, the protection board is activated, and the LED indicator lights start from "RUN" and light up sequentially for 0.5 seconds each.
+When BMS is in active state, press the button (3/~6S) and release, the protection board enters sleep mode, and the LED indicator lights start from the lowest battery level and light up sequentially for 0.5 seconds each.
+When BMS is in active state, press the button (6/~10S) and release, the protection board is reset, and all LED lights light up simultaneously for 1.5 seconds.
 **After BMS is reset, parameters and functions set via the upper computer (host computer) are still retained. If you need to restore to initial parameters, you can use the "Restore Default" function on the upper computer, but related operation records and stored data remain unchanged (such as battery level, cycle count, protection records, etc.).**
 
 ### 6.4 Sleep and Wake-up
@@ -1412,7 +1412,7 @@ When BMS is in active state, press the button (6~10S) and release, the protectio
 #### Sleep
 When any of the following conditions is met, the system enters low power mode:
 1) Single cell or total overdischarge protection is not released within 30 seconds.
-2) Press the button (3~6S) and release.
+2) Press the button (3/~6S) and release.
 3) The minimum cell voltage is lower than the sleep voltage, and in the absence of communication, protection, balancing, current, or charging, the duration reaches the sleep delay time.
 4) Standby time exceeds 24 hours (no communication, no charge/discharge, no external power supply).
 5) Forced shutdown via upper computer software.
@@ -1421,7 +1421,7 @@ Before entering sleep mode, ensure that no external voltage is applied to the in
 #### Wake-up
 When the system is in low power mode and any of the following conditions is met, the system will exit low power mode and enter normal operation mode:
 1) Charger is connected, charger output voltage must be greater than 48V.
-2) Press the reset button (3~6S) and release.
+2) Press the reset button (3/~6S) and release.
 3) RS232 communication is activated.
 
 **Note: When entering low power mode due to single cell or total overdischarge protection, the system wakes up regularly every 4 hours to turn on the charging MOS. If charging is possible, it will exit sleep state and enter normal charging; if it fails to charge after 10 consecutive automatic wake-ups, it will no longer wake up automatically.**
@@ -1450,7 +1450,7 @@ Independent RS485 interface, default baud rate is 9600bps. This interface is use
 
 ### 7.4 Parallel RS485 Communication
 
-Parallel RS485 communication, default baud rate is 9600bps. If communication with the monitoring device via RS485 is required, the monitoring device acts as the master and polls data by address. The address setting range is 1~15.
+Parallel RS485 communication, default baud rate is 9600bps. If communication with the monitoring device via RS485 is required, the monitoring device acts as the master and polls data by address. The address setting range is 1/~15.
 
 ### 7.5 DIP Switch (Note: When manual encoding is selected, refer to the following logic)
 
