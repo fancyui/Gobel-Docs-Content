@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td>Customer Name</td>
-    <td colspan="3">Dongguan Zhongling Technology Co., Ltd.</td>
+    <td colspan="3">Gobel Power</td>
   </tr>
   <tr>
     <td>Customer Model</td>
@@ -2892,9 +2892,9 @@ When removing, first unplug the charger or load, then remove the battery samplin
     <th>Led-01</th>
   </tr>
   <tr>
-    <td rowspan="2">Run灯</td>
-    <td rowspan="2">Alarm灯</td>
-    <td colspan="10">SOC电量灯</td>
+    <td rowspan="2">Run</td>
+    <td rowspan="2">Alarm</td>
+    <td colspan="10">SOC</td>
   </tr>
   <tr>
     <td>100%</td>

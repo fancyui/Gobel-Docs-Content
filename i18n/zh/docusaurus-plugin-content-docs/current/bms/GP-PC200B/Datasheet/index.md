@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td>客户名称</td>
-    <td colspan="3">东莞市众领科技有限公司</td>
+    <td colspan="3">Gobel Power</td>
   </tr>
   <tr>
     <td>客户型号</td>
