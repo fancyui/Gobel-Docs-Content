@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 description: Learn about frequently asked questions (FAQ) for GP-PC200B BMS, including connection methods, firmware upgrades, parallel configuration, and inverter communication.
 ---
 

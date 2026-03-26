@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+---
+
+
 # GP-PC200B BMS Inverter Protocols
 
 ## CAN Protocols

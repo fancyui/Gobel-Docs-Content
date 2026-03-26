@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+sidebar_label: Downloads
+---
+
+
 # GP-PC200B BMS Firmware Download
 
 ### P41755V110-51706-1.30A-002 (2025-11-05)
