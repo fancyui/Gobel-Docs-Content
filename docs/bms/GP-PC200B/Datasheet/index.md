@@ -1,6 +1,3 @@
-![Image](./images/page1_img1.png)
-
-
 
 # Specification Confirmation
 
