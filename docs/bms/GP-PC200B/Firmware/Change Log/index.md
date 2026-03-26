@@ -60,26 +60,35 @@ Communication Board: **IOB-31834B-1.0**
 
 - Modified WIFI-RS232 protocol: the “normal RTN” in returned data is changed to the requested CID2.
 
-
-
 ### P41755V110-51706-1.10-000
 
 - Supports 31 battery packs in parallel.
+
 - Dynamic SOC protection logic: 
-	When SOC is lower than Minimum Discharge SOC, DCL is 0  (Released after SOC +30%)
+
+	a. When SOC is lower than Minimum Discharge SOC, DCL is 0  (Released after SOC +30%)
 	When battery voltage is lower than Pack Under Voltage Alarm, DCL is 0 (Release after voltage + 3V)
-	Dynamic Minimum Discharge SOC: Increased if not fully charged for certain days
+
+	b. Dynamic Minimum Discharge SOC: Increased if not fully charged for certain days
 	Default: 10%
-	4 days without full charge: 50%
-	8 days without full charge: 70%
-	After fully charge: reset to default
-&gt; 	Set SOC Alarm to be below 5% to bypass dynamic Minimum Discharge SOC logic. (Warning: check battery voltage and charge battery to full regularly if disable automatic SOC management to prevent over discharge) 
+
+	c. 4 days without full charge: 50%
+
+	d. 8 days without full charge: 70%
+
+	e. After fully charge: reset to default
+
+> 	Set SOC Alarm to be below 5% to bypass dynamic Minimum Discharge SOC logic. (Warning: check battery voltage and charge battery to full regularly if disable automatic SOC management to prevent over discharge) 
 
 - Max Request Charge Voltage (CVL) logic: 
-	1 hour after fully charging, Max Request Charge Voltage is changed to Pack OVP Release Value. 
-	Max Request Charge Voltage is recovered to Pack FullCharge Voltage Value after SOC drops to 95%.
+
+	a. 1 hour after fully charging, Max Request Charge Voltage is changed to Pack OVP Release Value. 
+
+	b. Max Request Charge Voltage is recovered to Pack FullCharge Voltage Value after SOC drops to 95%.
 
 - Fully condition: 
-	Fully condition voltage ≥ Max Charge Voltage - 0.5V
-	Fully condition current ≤ Current
+
+	a. Fully condition voltage ≥ Max Charge Voltage - 0.5V
+
+	b. Fully condition current ≤ Current
 
