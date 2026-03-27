@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+sidebar_label: 软件
+---
+
+
 # GP-PC200B BMS 软件下载列表
 
 ### 上位机软件 (Windows)
