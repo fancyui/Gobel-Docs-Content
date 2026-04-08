@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+---
+
+
 # GP-PC200B BMS Datasheet
 
 ## Specification Confirmation

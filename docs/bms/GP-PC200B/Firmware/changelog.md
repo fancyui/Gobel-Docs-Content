@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+sidebar_label: Changelog
+---
+
+
 # GP-PC200B BMS Firmware Changelog
 
 =======================

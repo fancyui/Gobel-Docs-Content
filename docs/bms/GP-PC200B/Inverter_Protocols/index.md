@@ -1,6 +1,12 @@
-# GP-PC200B BMS 逆变器协议
+---
+sidebar_position: 2
+sidebar_label: Inverter Protocols
+---
 
-## CAN 协议
+
+# GP-PC200B BMS Inverter Protocols
+
+## CAN Protocols
 1. AFORE
 2. Deye
 -- Pylontech
@@ -29,7 +35,7 @@
 16. TBB
 17. Victron
 
-## RS485 协议
+## RS485 Protocols
 1. AFORE
 2. Deye
 -- Bentterson
