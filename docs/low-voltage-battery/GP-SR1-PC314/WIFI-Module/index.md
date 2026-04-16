@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: WIFI Module
+toc_min_heading_level: 2
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: WIFI模块
+toc_min_heading_level: 2
 ---
 
 # GP-PWB1-PC200B WIFI模块安装与配置手册
