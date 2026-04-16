@@ -6,8 +6,6 @@ sidebar_label: WIFI Module
 
 # GP-PWB1-PC200B WIFI Module Installation and Configuration Manual
 
-## Table of Contents
-
 ## Safety Instructions
 
 :::danger Electrical Safety
