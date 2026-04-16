@@ -1,372 +1,377 @@
-# GP-SRA-PC314 组装手册
+---
+sidebar_position: 1
+sidebar_label: Assembly Manual
+---
 
-**品牌：** Gobel Power
+# GP-SRA-PC314 Assembly Manual
 
-**产品型号：** GP-SRA-PC314
+**Brand:** Gobel Power
 
-**手册类型：** 组装手册
+**Product Model:** GP-SRA-PC314
 
-**适用产品：** 磷酸铁锂高压电池 DIY 套件
+**Manual Type:** Assembly Manual
 
-## 目录
+**Applicable Product:** LiFePO4 High Voltage Battery DIY Kit
 
-1. [安全须知](#安全须知)
-2. [产品简介](#产品简介)
-3. [部件清单](#部件清单)
-4. [工具与材料准备](#工具与材料准备)
-5. [螺丝扭矩要求](#螺丝扭矩要求)
-6. [组装步骤](#组装步骤)
-   - [风扇总成预装](#风扇总成预装)
-   - [箱体面板总成预装](#箱体面板总成预装)
-   - [串联线预装](#串联线预装)
-   - [电池包主体组装](#电池包主体组装)
-   - [电气连接](#电气连接)
-   - [总装完成](#总装完成)
-7. [连接步骤](#连接步骤)
-8. [端口示意图](#端口示意图)
+## Table of Contents
 
-## 安全须知
+1. [Safety Precautions](#Safety-Precautions)
+2. [Product Introduction](#Product-Introduction)
+3. [Parts List](#Parts-List)
+4. [Tools and Materials Preparation](#Tools-and-Materials-Preparation)
+5. [Screw Torque Requirements](#Screw-Torque-Requirements)
+6. [Assembly Steps](#Assembly-Steps)
+   - [Fan Assembly Pre-installation](#Fan-Assembly-Pre-installation)
+   - [Enclosure Panel Assembly Pre-installation](#Enclosure-Panel-Assembly-Pre-installation)
+   - [Series Cable Pre-installation](#Series-Cable-Pre-installation)
+   - [Main Battery Pack Assembly](#Main-Battery-Pack-Assembly)
+   - [Electrical Connections](#Electrical-Connections)
+   - [Final Assembly Completion](#Final-Assembly-Completion)
+7. [Connection Steps](#Connection-Steps)
+8. [Port Diagram](#Port-Diagram)
 
-:::danger 电气安全
-- 系统电压最高可达 1000V，在安装调试和使用期间，必须按相关安全规定做好安全防护措施，避免安全事故的发生
-- **严禁在高压箱上电的情况下连接从控 BMU**，避免可能损坏 BMS
-- 安装及调试人员所使用的工具须有绝缘防护
-- 在安装调试及维护时必须戴绝缘橡胶手套，视情况穿戴护目镜、绝缘橡胶靴，尽可能避免安全事故的发生
-- 需要维护时，必须将主断路器断开，切断电池组与 PCS 直流总线的连接
+## Safety Precautions
+
+:::danger Electrical Safety
+- The system voltage can reach up to 1000V. During installation, commissioning, and use, safety precautions must be taken according to relevant safety regulations to avoid accidents.
+- **It is strictly forbidden to connect the slave BMU while the high-voltage box is powered on** to avoid potential damage to the BMS.
+- Tools used by installation and commissioning personnel must have insulation protection.
+- Insulated rubber gloves must be worn during installation, commissioning, and maintenance. Wear goggles and insulated rubber boots as appropriate to avoid accidents as much as possible.
+- When maintenance is required, the main circuit breaker must be disconnected to cut off the connection between the battery pack and the PCS DC bus.
 :::
 
-:::danger 电池安全
-- 安装调试及维护过程中产生的线头金属等如掉入电池间，请务必使用绝缘工具取出，不能将杂物留置
-- 确保正负极连接正确，避免短路损坏电池或 BMS
+:::danger Battery Safety
+- If wire ends, metal, or other debris generated during installation, commissioning, and maintenance fall into the battery compartment, be sure to use insulated tools to remove them. Do not leave debris inside.
+- Ensure the positive and negative poles are connected correctly to avoid short circuits that could damage the battery or BMS.
 :::
 
-:::warning 消防安全
-- 如遇储能柜周围起火，请务必使用干粉灭火器或者消防沙进行灭火
-- **若使用液体灭火可能导致电击**
-- 如长期不使用系统，请务必断开电池柜的主断路器
+:::warning Fire Safety
+- In case of a fire around the energy storage cabinet, be sure to use a dry powder fire extinguisher or fire sand to extinguish the fire.
+- **Using liquid to extinguish the fire may result in electric shock.**
+- If the system is not used for a long time, be sure to disconnect the main circuit breaker of the battery cabinet.
 :::
 
-:::warning 一般安全
-- 工作环境应保持干燥、通风、无易燃物
-- 儿童及无关人员应远离安装区域
-- 请使用合格且有绝缘防护的工具进行操作
+:::warning General Safety
+- The working environment should be kept dry, ventilated, and free of flammable materials.
+- Children and unrelated personnel should stay away from the installation area.
+- Use qualified tools with insulation protection for operation.
 :::
 
-## 产品简介
+## Product Introduction
 
-GP-SRA-PC314 是 Gobel Power 推出的磷酸铁锂高压电池 DIY 套件，由高压箱、BMU 和电池包三大部分组成。
+GP-SRA-PC314 is a LiFePO4 high-voltage battery DIY kit launched by Gobel Power, consisting of three main parts: high-voltage box, BMU, and battery pack.
 
-### 主要特点
+### Main Features
 
-- **电芯规格**：使用 314Ah LiFePO4 磷酸铁锂电芯
-- **连接方式**：1P18S 串联（18 串并）
-- **系统配置**：该高压系统至少需要 5 个电池包，最多 15 个电池包串联
-- **BMU 功能**：每个电池包装一个 BMU，可检测 18 个电芯的电压，配备 8 个 NTC 温度传感器
-- **高压箱性能**：
-  - 最大支持 200A 电流
-  - 可连接逆变器、上位机、EMS
-  - 提供过充保护、过放保护、过流保护、过温保护、低温保护及多级告警机制
-  - 可与总控进行实时通信，上传电池数据
-  - 具有电池状态和数据存储功能
-  - 具备 RS485、CAN 隔离通信功能
-  - 可外接 6 个继电器，适应工商业储能、UPS 供电系统及其他应用
+- **Cell Specification**: Uses 314Ah LiFePO4 cells
+- **Connection Method**: 1P18S series (18 cells in series)
+- **System Configuration**: This high-voltage system requires at least 5 battery packs and a maximum of 15 battery packs connected in series.
+- **BMU Function**: Each battery pack is equipped with one BMU, which can detect the voltage of 18 cells and is equipped with 8 NTC temperature sensors.
+- **High-Voltage Box Performance**:
+  - Supports a maximum current of 200A
+  - Can connect to inverters, upper computers, and EMS
+  - Provides overcharge protection, over-discharge protection, over-current protection, over-temperature protection, low-temperature protection, and multi-level alarm mechanisms
+  - Real-time communication with the master controller to upload battery data
+  - Battery status and data storage functions
+  - RS485 and CAN isolated communication functions
+  - Can be externally connected to 6 relays, suitable for commercial and industrial energy storage, UPS power supply systems, and other applications
 
-## 部件清单
+## Parts List
 
 :::note
-下表中标注"N"的数量表示每个电池包所需的数量，高压箱和某些公共部件只需要 1 件。
+The quantity marked "N" in the table below represents the quantity required for each battery pack. The high-voltage box and some common parts only require 1 piece.
 :::
 
-|         编号          |       名称       |    规格/数量    |             图片             |
-| :-------------------: | :--------------: | :-------------: | :--------------------------: |
-| <a id="part01">01</a> |     箱体外壳     |     1 件/N      |    ![箱体外壳](images/p1.jpg)    |
-| <a id="part02">02</a> |    电芯压缩板    |     1 件/N      |   ![电芯压缩板](images/p4.jpg)   |
-| <a id="part03">03</a> |     电芯压条     |     1 件/N      |   ![电芯压条](images/p5.jpg)   |
-| <a id="part04">04</a> |   底部环氧板     |     2 件/N      |   ![底部环氧板](images/p6.jpg)   |
-| <a id="part05">05</a> |   侧部环氧板     |     4 件/N      |   ![侧部环氧板](images/p7.jpg)   |
-| <a id="part06">06</a> |   电芯环氧板     |    20 件/N      |   ![电芯环氧板](images/p8.jpg)   |
-| <a id="part07">07</a> |   压条环氧板     |     2 件/N      |   ![压条环氧板](images/p9.jpg)   |
-| <a id="part08">08</a> |   电芯连接片     |    17 件/N      |  ![电芯连接片](images/p10.jpg)  |
-| <a id="part09">09</a> | 正负极接线片     |     2 件/N      |  ![正负极接线片](images/p13.jpg) |
-| <a id="part10">10</a> |    正极铜排      |     1 件/N      |   ![正极铜排](images/p11.jpg)   |
-| <a id="part11">11</a> |    负极铜排      |     1 件/N      |   ![负极铜排](images/p12.jpg)   |
-| <a id="part12">12</a> |    箱体盖子      |     1 件/N      |   ![箱体盖子](images/p15.jpg)   |
-| <a id="part13">13</a> |    箱体面板      |     1 件/N      |   ![箱体面板](images/p14.jpg)   |
-| <a id="part14">14</a> |      风扇        |     2 件/N      |   ![风扇](images/p16.jpg)   |
-| <a id="part15">15</a> |   风扇固定板     |     2 件/N      | ![风扇固定板](images/p17.jpg) |
-| <a id="part16">16</a> |  风扇防护罩      |     2 件/N      | ![风扇防护罩](images/p18.jpg) |
-| <a id="part17">17</a> |      BMU         |     1 件/N      |    ![BMU](images/p3.jpg)    |
-| <a id="part18">18</a> |     高压箱       |   1 件 (系统)   |   ![高压箱](images/p2.jpg)   |
-| <a id="part19">19</a> |  BMU 通讯线       |     1 件/N      |  ![BMU 通讯线](images/p19.jpg) |
-| <a id="part20">20</a> |  风扇连接线      |     1 件/N      | ![风扇连接线](images/p20.jpg) |
-| <a id="part21">21</a> | 高压箱-BMU 通讯线 |   1 件 (系统)   | ![高压箱-BMU 通讯线](images/p22.jpg) |
-| <a id="part22">22</a> |  上位机通讯线    |   1 件 (系统)   |  ![上位机通讯线](images/p25.jpg) |
-| <a id="part23">23</a> |  正极端子底座    |     1 件/N      | ![正极端子底座](images/p26.jpg) |
-| <a id="part24">24</a> |  负极端子底座    |     1 件/N      | ![负极端子底座](images/p27.jpg) |
-| <a id="part25">25</a> |  正极端子插头    |   (1 件 +2)/N   | ![正极端子插头](images/p23.jpg) |
-| <a id="part26">26</a> |  负极端子插头    |   (1 件 +2)/N   | ![负极端子插头](images/p24.jpg) |
-| <a id="part27">27</a> |      把手        |     2 件/N      |    ![把手](images/p28.jpg)    |
-| <a id="part28">28</a> |  箱体固定耳      |     2 件/N      | ![箱体固定耳](images/p29.jpg) |
-| <a id="part29">29</a> |  电压检测线      |     1 件/N      |  ![电压检测线](images/p30.jpg) |
-| <a id="part30">30</a> | 逆变器通讯线     |   1 件 (系统)   | ![逆变器通讯线](images/p31.jpg) |
+| No. | Name | Specification/Quantity | Image |
+| :---: | :---: | :---: | :---: |
+| <a id="part01">01</a> | Enclosure Case | 1 pc/N | ![Enclosure Case](images/p1.jpg) |
+| <a id="part02">02</a> | Cell Compression Plate | 1 pc/N | ![Cell Compression Plate](images/p4.jpg) |
+| <a id="part03">03</a> | Cell Clamping Bar | 1 pc/N | ![Cell Clamping Bar](images/p5.jpg) |
+| <a id="part04">04</a> | Bottom Epoxy Board | 2 pcs/N | ![Bottom Epoxy Board](images/p6.jpg) |
+| <a id="part05">05</a> | Side Epoxy Board | 4 pcs/N | ![Side Epoxy Board](images/p7.jpg) |
+| <a id="part06">06</a> | Cell Epoxy Board | 20 pcs/N | ![Cell Epoxy Board](images/p8.jpg) |
+| <a id="part07">07</a> | Clamping Bar Epoxy Board | 2 pcs/N | ![Clamping Bar Epoxy Board](images/p9.jpg) |
+| <a id="part08">08</a> | Cell Busbar | 17 pcs/N | ![Cell Busbar](images/p10.jpg) |
+| <a id="part09">09</a> | Main Terminal Lug | 2 pcs/N | ![Main Terminal Lug](images/p13.jpg) |
+| <a id="part10">10</a> | Positive Copper Busbar | 1 pc/N | ![Positive Copper Busbar](images/p11.jpg) |
+| <a id="part11">11</a> | Negative Copper Busbar | 1 pc/N | ![Negative Copper Busbar](images/p12.jpg) |
+| <a id="part12">12</a> | Enclosure Cover | 1 pc/N | ![Enclosure Cover](images/p15.jpg) |
+| <a id="part13">13</a> | Enclosure Panel | 1 pc/N | ![Enclosure Panel](images/p14.jpg) |
+| <a id="part14">14</a> | Fan | 2 pcs/N | ![Fan](images/p16.jpg) |
+| <a id="part15">15</a> | Fan Fixing Plate | 2 pcs/N | ![Fan Fixing Plate](images/p17.jpg) |
+| <a id="part16">16</a> | Fan Guard | 2 pcs/N | ![Fan Guard](images/p18.jpg) |
+| <a id="part17">17</a> | BMU | 1 pc/N | ![BMU](images/p3.jpg) |
+| <a id="part18">18</a> | High-Voltage Box | 1 pc (System) | ![High-Voltage Box](images/p2.jpg) |
+| <a id="part19">19</a> | BMU Communication Cable | 1 pc/N | ![BMU Communication Cable](images/p19.jpg) |
+| <a id="part20">20</a> | Fan Connection Cable | 1 pc/N | ![Fan Connection Cable](images/p20.jpg) |
+| <a id="part21">21</a> | HV Box to BMU Comm Cable | 1 pc (System) | ![HV Box to BMU Comm Cable](images/p22.jpg) |
+| <a id="part22">22</a> | PC Communication Cable | 1 pc (System) | ![PC Communication Cable](images/p25.jpg) |
+| <a id="part23">23</a> | Positive Terminal Base | 1 pc/N | ![Positive Terminal Base](images/p26.jpg) |
+| <a id="part24">24</a> | Negative Terminal Base | 1 pc/N | ![Negative Terminal Base](images/p27.jpg) |
+| <a id="part25">25</a> | Positive Terminal Plug | (1 pc +2)/N | ![Positive Terminal Plug](images/p23.jpg) |
+| <a id="part26">26</a> | Negative Terminal Plug | (1 pc +2)/N | ![Negative Terminal Plug](images/p24.jpg) |
+| <a id="part27">27</a> | Handle | 2 pcs/N | ![Handle](images/p28.jpg) |
+| <a id="part28">28</a> | Case Mounting Ear | 2 pcs/N | ![Case Mounting Ear](images/p29.jpg) |
+| <a id="part29">29</a> | Voltage Sensing Harness | 1 pc/N | ![Voltage Sensing Harness](images/p30.jpg) |
+| <a id="part30">30</a> | Inverter Comm Cable | 1 pc (System) | ![Inverter Comm Cable](images/p31.jpg) |
 
-## 工具与材料准备
+## Tools and Materials Preparation
 
 :::note
-以下工具和材料不随产品附带，需用户自备。
+The following tools and materials are not included with the product and must be prepared by the user.
 :::
 
-| 工具/材料 | 规格/要求 | 用途 |
-| :--------: | :-------: | :--: |
-| 绝缘螺丝刀套装 | 包含常用规格 | 紧固螺丝 |
-| 扭矩扳手 | M6/M8/M10 套筒 | 按扭矩要求紧固螺丝 |
-| 线缆压接钳 | 适用于 300A 端子 | 压接正负极端子插头 |
-| 万用表 | 绝缘等级符合高压要求 | 检测电压、通断 |
-| 绝缘橡胶手套 | 高压防护等级 | 人身安全防护 |
-| 护目镜 | 防冲击 | 保护眼睛 |
-| 绝缘橡胶靴 | 高压防护 | 人身安全防护 |
-| 干粉灭火器或消防沙 | — | 消防应急 |
-| 线缆剪切工具 | 适用于高压线缆 | 裁剪合适长度的线缆 |
-| 绝缘胶带 | 高压绝缘等级 | 绝缘保护 |
+| Tool/Material | Specification/Requirement | Purpose |
+| :---: | :---: | :---: |
+| Insulated Screwdriver Set | Includes common specifications | Tightening screws |
+| Torque Wrench | M6/M8/M10 sockets | Tighten screws according to torque requirements |
+| Cable Crimping Tool | Suitable for 300A terminals | Crimping positive and negative terminal plugs |
+| Multimeter | Insulation level meets high-voltage requirements | Testing voltage, continuity |
+| Insulated Rubber Gloves | High-voltage protection level | Personal safety protection |
+| Goggles | Impact resistant | Eye protection |
+| Insulated Rubber Boots | High-voltage protection | Personal safety protection |
+| Dry Powder Fire Extinguisher or Fire Sand | — | Fire emergency |
+| Cable Cutting Tool | Suitable for high-voltage cables | Cutting cables to appropriate length |
+| Insulation Tape | High-voltage insulation level | Insulation protection |
 
-## 螺丝扭矩要求
+## Screw Torque Requirements
 
 :::warning
-请务必使用扭矩扳手按以下标准紧固螺丝，过松或过紧都可能导致连接不良或部件损坏。
+Be sure to use a torque wrench to tighten the screws according to the following standards. Too loose or too tight may lead to poor connection or component damage.
 :::
 
-| 螺丝规格 |   扭矩要求   |
-| :------: | :----------: |
-|   **M6** |   **8N·m**   |
-|   **M8** |  **15N·m**   |
-|  **M10** | **15-20N·m** |
+| Screw Specification | Torque Requirement |
+| :---: | :---: |
+| **M6** | **8N·m** |
+| **M8** | **15N·m** |
+| **M10** | **15-20N·m** |
 
-## 组装步骤
+## Assembly Steps
 
-### 风扇总成预装
+### Fan Assembly Pre-installation
 
-**步骤 1：** 组装风扇总成
+**Step 1:** Assemble the fan assembly
 
-将 **风扇（[14](#part14)）**、**风扇固定板（[15](#part15)）** 和 **风扇防护罩（[16](#part16)）** 组装在一起。共需组装 2 个总成待用。
+Assemble the **Fan ([14](#part14))**, **Fan Fixing Plate ([15](#part15))**, and **Fan Guard ([16](#part16))** together. A total of 2 assemblies are needed for later use.
 
-:::note 注意事项
-- 注意风扇标签文字朝向防护罩方向
-- 确保风扇安装牢固，无松动
+:::note Precautions
+- Note that the text on the fan label should face towards the fan guard.
+- Ensure the fan is installed firmly without looseness.
 :::
 
-![风扇总成正面](images/fan-f.jpg)
+![Fan Assembly Front](images/fan-f.jpg)
 
-![风扇总成反面](images/fan-b.jpg)
+![Fan Assembly Back](images/fan-b.jpg)
 
-### 箱体面板总成预装
+### Enclosure Panel Assembly Pre-installation
 
-**步骤 2：** 组装箱体面板总成
+**Step 2:** Assemble the enclosure panel assembly
 
-将 **箱体面板（[13](#part13)）**、**正极端子底座（[23](#part23)）**、**负极端子底座（[24](#part24)）**、**BMU（[17](#part17)）** 和 **把手（[27](#part27)）** 组装在一起待用。
+Assemble the **Enclosure Panel ([13](#part13))**, **Positive Terminal Base ([23](#part23))**, **Negative Terminal Base ([24](#part24))**, **BMU ([17](#part17))**, and **Handles ([27](#part27))** together for later use.
 
 :::tip
-建议在工作台上预先排列好各部件位置，确保安装时对齐准确。
+It is recommended to pre-arrange the positions of each component on the workbench to ensure accurate alignment during installation.
 :::
 
-![箱体面板正面](images/front-pannel-f.jpg)
+![Enclosure Panel Front](images/front-pannel-f.jpg)
 
-![箱体面板反面](images/front-pannel-b.jpg)
+![Enclosure Panel Back](images/front-pannel-b.jpg)
 
-### 串联线预装
+### Series Cable Pre-installation
 
-**步骤 3：** 组装电池包间串联线
+**Step 3:** Assemble inter-pack series cables
 
-使用线缆压接钳和合适长度的线缆压接 **正极端子插头（[25](#part25)）** 和 **负极端子插头（[26](#part26)）**，组成电池包间串联线。
+Use a cable crimping tool and an appropriate length of cable to crimp the **Positive Terminal Plug ([25](#part25))** and **Negative Terminal Plug ([26](#part26))** to form inter-pack series cables.
 
 :::note
-- 确保压接牢固，无松动
-- 线缆长度应根据实际电池包间距确定
+- Ensure the crimp is firm and not loose.
+- The cable length should be determined based on the actual spacing between battery packs.
 :::
 
-![电池包间串联线](images/BMU-Power-Cable.jpg)
+![Inter-pack Series Cable](images/BMU-Power-Cable.jpg)
 
-**步骤 4：** 组装电池包与高压箱正极连接线
+**Step 4:** Assemble battery pack to HV box positive connection cable
 
-使用线缆压接钳和合适长度的线缆压接两个 **正极端子插头（[25](#part25)）**，组成电池包与高压箱正极连接线。
+Use a cable crimping tool and an appropriate length of cable to crimp two **Positive Terminal Plugs ([25](#part25))** to form a battery pack to HV box positive connection cable.
 
-![电池包与高压箱正极连接线](images/HVB-Pack-P-Cable.jpg)
+![Battery pack to HV box positive connection cable](images/HVB-Pack-P-Cable.jpg)
 
-**步骤 5：** 组装电池包与高压箱负极连接线
+**Step 5:** Assemble battery pack to HV box negative connection cable
 
-使用线缆压接钳和合适长度的线缆压接两个 **负极端子插头（[26](#part26)）**，组成电池包与高压箱负极连接线。
+Use a cable crimping tool and an appropriate length of cable to crimp two **Negative Terminal Plugs ([26](#part26))** to form a battery pack to HV box negative connection cable.
 
-![电池包与高压箱负极连接线](images/HVB-Pack-N-Cable.jpg)
+![Battery pack to HV box negative connection cable](images/HVB-Pack-N-Cable.jpg)
 
-### 电池包主体组装
+### Main Battery Pack Assembly
 
-**步骤 6：** 安装风扇总成到箱体
+**Step 6:** Install fan assembly into the enclosure
 
-将风扇总成装到 **箱体外壳（[01](#part01)）** 上，风扇的线从箱体框架上的孔中穿出。
+Install the fan assembly onto the **Enclosure Case ([01](#part01))**. The fan wires should pass through the holes on the enclosure frame.
 
 :::note
-- 确保风扇标签面朝外
-- 风扇线应从箱体框架预留孔穿出，避免挤压
+- Ensure the fan label faces outwards.
+- Fan wires should pass through the reserved holes in the enclosure frame to avoid pinching.
 :::
 
-![风扇安装](images/2.jpg)
+![Fan Installation](images/2.jpg)
 
-**步骤 7：** 安装底部和侧部环氧板
+**Step 7:** Install bottom and side epoxy boards
 
-将 **底部环氧板（[04](#part04)）** 和 **侧部环氧板（[05](#part05)）** 放入箱体。
+Place the **Bottom Epoxy Boards ([04](#part04))** and **Side Epoxy Boards ([05](#part05))** into the enclosure.
 
-![底部和侧部环氧板安装](images/3.jpg)
+![Bottom and Side Epoxy Board Installation](images/3.jpg)
 
-**步骤 8：** 安装电芯到箱体
+**Step 8:** Install cells into the enclosure
 
-将电芯放入 **箱体外壳（[01](#part01)）**，注意电芯正负极方向。
+Place the cells into the **Enclosure Case ([01](#part01))**, paying attention to the positive and negative directions of the cells.
 
-:::warning 注意
-电芯正负极方向必须正确，否则会导致后续连接错误。
+:::warning Note
+The positive and negative directions of the cells must be correct, otherwise it will lead to subsequent connection errors.
 :::
 
-![电芯安装](images/4.jpg)
+![Cell Installation](images/4.jpg)
 
-**步骤 9：** 安装电芯压缩板
+**Step 9:** Install cell compression plate
 
-将 **电芯压缩板（[02](#part02)）** 安装于电芯端部，防止电芯膨胀。
+Install the **Cell Compression Plate ([02](#part02))** at the end of the cells to prevent cell expansion.
 
-![电芯压缩板安装](images/5.jpg)
+![Cell Compression Plate Installation](images/5.jpg)
 
-**步骤 10：** 安装压条环氧板
+**Step 10:** Install clamping bar epoxy board
 
-将 **压条环氧板（[07](#part07)）** 安装于电芯上方。
+Install the **Clamping Bar Epoxy Board ([07](#part07))** above the cells.
 
-![压条环氧板安装](images/6.jpg)
+![Clamping Bar Epoxy Board Installation](images/6.jpg)
 
-**步骤 11：** 安装电芯压条
+**Step 11:** Install cell clamping bar
 
-将 **电芯压条（[03](#part03)）** 安装于压条环氧板上方。
+Install the **Cell Clamping Bar ([03](#part03))** above the clamping bar epoxy board.
 
-![电芯压条安装](images/7.jpg)
+![Cell Clamping Bar Installation](images/7.jpg)
 
-### 电气连接
+### Electrical Connections
 
-**步骤 12：** 安装电芯连接片和正负极接线片
+**Step 12:** Install cell busbars and main terminal lugs
 
-安装 **电芯连接片（[08](#part08)）** 和 **正负极接线片（[09](#part09)）**。
+Install the **Cell Busbars ([08](#part08))** and **Main Terminal Lugs ([09](#part09))**.
 
-:::warning 高压危险
-- 此步骤涉及高压连接，请确保操作前已做好绝缘防护
-- 连接片安装应牢固，接触面应紧密
+:::warning High Voltage Danger
+- This step involves high-voltage connections. Please ensure insulation protection is in place before operation.
+- Busbars should be installed firmly, and contact surfaces should be tight.
 :::
 
-![电芯连接片安装](images/8.jpg)
+![Cell Busbar Installation](images/8.jpg)
 
-**步骤 13：** 安装箱体面板总成
+**Step 13:** Install enclosure panel assembly
 
-将组装好的箱体面板总成安装到箱体。安装前先把 **电压检测线（[29](#part29)）** 和 **风扇连接线（[20](#part20)）** 从面板孔中穿入。
+Install the assembled enclosure panel assembly onto the case. Before installation, thread the **Voltage Sensing Harness ([29](#part29))** and **Fan Connection Cable ([20](#part20))** through the panel holes.
 
-![箱体面板总成安装](images/9.jpg)
+![Enclosure Panel Assembly Installation](images/9.jpg)
 
-**步骤 14：** 安装箱体固定耳
+**Step 14:** Install case mounting ears
 
-将 **箱体固定耳（[28](#part28)）** 安装到箱体。
+Install the **Case Mounting Ears ([28](#part28))** onto the enclosure.
 
-![箱体固定耳安装](images/10.jpg)
+![Case Mounting Ear Installation](images/10.jpg)
 
-**步骤 15：** 连接电压检测线和风扇连接线
+**Step 15:** Connect voltage sensing harness and fan connection cable
 
-- 将 **电压检测线（[29](#part29)）** 连接到对应的电芯上
-- 将 **风扇连接线（[20](#part20)）** 连接到风扇引出线上
-- 电压检测线另一端接 BMU 上的 **CELL VOLT/TEMP** 端口
-- 风扇连接线另一端接 BMU 上的 **FAN** 端口
+- Connect the **Voltage Sensing Harness ([29](#part29))** to the corresponding cells.
+- Connect the **Fan Connection Cable ([20](#part20))** to the fan lead wires.
+- Connect the other end of the voltage sensing harness to the **CELL VOLT/TEMP** port on the BMU.
+- Connect the other end of the fan connection cable to the **FAN** port on the BMU.
 
 :::note
-- 确保电压检测线按顺序连接到每个电芯
-- 风扇连接线注意正负极对应
+- Ensure the voltage sensing harness is connected to each cell in order.
+- Pay attention to the positive and negative correspondence for the fan connection cable.
 :::
 
-**步骤 16：** 安装正负极铜排
+**Step 16:** Install positive and negative copper busbars
 
-安装 **正极铜排（[10](#part10)）** 和 **负极铜排（[11](#part11)）**。
+Install the **Positive Copper Busbar ([10](#part10))** and **Negative Copper Busbar ([11](#part11))**.
 
 :::warning
-- 铜排连接必须紧固到位，使用扭矩扳手按标准扭矩紧固
-- 确保铜排与其他金属部件保持安全距离
+- Copper busbar connections must be tight. Use a torque wrench to tighten to the standard torque.
+- Ensure the copper busbars maintain a safe distance from other metal parts.
 :::
 
-![铜排安装](images/11.jpg)
+![Copper Busbar Installation](images/11.jpg)
 
-### 总装完成
+### Final Assembly Completion
 
-**步骤 17：** 安装箱体盖子
+**Step 17:** Install enclosure cover
 
-将 **箱体盖子（[12](#part12)）** 安装到箱体上。
+Install the **Enclosure Cover ([12](#part12))** onto the enclosure.
 
 :::note
-- 安装前检查箱体内无遗留工具或杂物
-- 确保盖子密封良好
+- Check that no tools or debris are left inside the enclosure before installation.
+- Ensure the cover is well-sealed.
 :::
 
-![箱体盖子安装](images/12.jpg)
+![Enclosure Cover Installation](images/12.jpg)
 
-**步骤 18：** 电池包组装完成
+**Step 18:** Battery pack assembly complete
 
-电池包组装完毕。检查所有连接是否牢固，确认无遗漏步骤后方可进行下一步系统连接。
+Battery pack assembly is finished. Check all connections for firmness and confirm no steps were missed before proceeding to the next step of system connection.
 
-:::tip 组装完成检查
-- 检查所有螺丝是否按扭矩要求紧固
-- 检查所有电气连接是否正确、牢固
-- 检查箱体内无遗留金属杂物
-- 检查风扇转动是否正常
+:::tip Assembly Completion Check
+- Check if all screws are tightened according to torque requirements.
+- Check if all electrical connections are correct and firm.
+- Check that no metal debris is left inside the enclosure.
+- Check if the fans rotate normally.
 :::
 
-## 连接步骤
+## Connection Steps
 
 :::note
-以下连接步骤用于将多个电池包与高压箱连接成完整的高压系统。系统至少需要 5 个电池包，最多 15 个电池包串联。
+The following connection steps are used to connect multiple battery packs with the high-voltage box to form a complete high-voltage system. The system requires at least 5 battery packs and a maximum of 15 battery packs connected in series.
 :::
 
-![系统连接总图](images/all-connection.jpg)
+![System Connection Diagram](images/all-connection.jpg)
 
-**步骤 1：** 电池包间串联连接
+**Step 1:** Inter-pack series connection
 
-将第一个电池包的正极与第二个电池包的负极用 **电池包间串联线** 连接。以此类推，将所有电池包串联。
+Connect the positive pole of the first battery pack with the negative pole of the second battery pack using an **inter-pack series cable**. Continue this process to connect all battery packs in series.
 
-**步骤 2：** 高压箱与第一个电池包 BMU 通讯连接
+**Step 2:** Communication connection between HV box and the first battery pack BMU
 
-将高压箱的 **Link Port Out** 端口与第一个电池包的 **COM IN** 端口用 **高压箱-BMU 通讯线（[21](#part21)）** 连接。
+Connect the **Link Port Out** of the HV box with the **COM IN** port of the first battery pack using the **HV Box to BMU Comm Cable ([21](#part21))**.
 
-**步骤 3：** 电池包间 BMU 通讯连接
+**Step 3:** BMU communication connection between battery packs
 
-将第一个电池包的 **COM OUT** 端口与第二个电池包的 **COM IN** 端口用 **BMU 通讯线（[19](#part19)）** 连接。以此类推，将所有电池包的 BMU 通讯口串联。
+Connect the **COM OUT** port of the first battery pack with the **COM IN** port of the second battery pack using the **BMU Communication Cable ([19](#part19))**. Continue this process to connect all BMU communication ports in series.
 
-**步骤 4：** 高压箱与第一个电池包正极连接
+**Step 4:** Positive connection between HV box and the first battery pack
 
-将高压箱的 **B+** 端口与第一个电池包的正极用 **电池包与高压箱正极连接线** 连接。
+Connect the **B+** port of the HV box with the positive pole of the first battery pack using the **battery pack to HV box positive connection cable**.
 
-**步骤 5：** 高压箱与最后一个电池包负极连接
+**Step 5:** Negative connection between HV box and the last battery pack
 
-将最后一个电池包的负极与高压箱的负极用 **电池包与高压箱负极连接线** 连接。
+Connect the negative pole of the last battery pack with the negative pole of the HV box using the **battery pack to HV box negative connection cable**.
 
-:::danger 高压危险
-- 连接前请确保所有断路器处于断开状态
-- 连接完成后检查所有接线是否正确、牢固
-- 首次上电前请使用万用表检查总电压是否正常
+:::danger High Voltage Danger
+- Ensure all circuit breakers are in the disconnected state before connecting.
+- Check all wiring for correctness and firmness after connection is complete.
+- Use a multimeter to check if the total voltage is normal before powering on for the first time.
 :::
 
-## 端口示意图
+## Port Diagram
 
-### 电池包端口示意图
+### Battery Pack Port Diagram
 
-![电池包端口](images/ports.jpg)
+![Battery Pack Ports](images/ports.jpg)
 
-### 高压箱端口示意图
+### High-Voltage Box Port Diagram
 
-![高压箱端口](images/hvb.jpg)
+![High-Voltage Box Ports](images/hvb.jpg)
 
-### BMU 端口示意图
+### BMU Port Diagram
 
-![BMU 端口](images/bmu.jpg)
+![BMU Ports](images/bmu.jpg)
 
-## 联系方式
+## Contact Information
 
-如遇到无法解决的故障，请联系 Gobel Power 技术支持：
+In case of troubleshooting issues that cannot be resolved, please contact Gobel Power technical support:
 
-- **官方网站：** www.gobelpower.com
-- **技术支持邮箱：** cs@gobelpower.com
+- **Official Website:** www.gobelpower.com
+- **Technical Support Email:** cs@gobelpower.com

@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+sidebar_label: 组装手册
+---
+
 # GP-SRA-PC314 组装手册
 
 **品牌：** Gobel Power

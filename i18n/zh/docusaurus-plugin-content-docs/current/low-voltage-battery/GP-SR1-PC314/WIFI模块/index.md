@@ -1,6 +1,9 @@
-# GP-PWB1-PC200B WIFI模块安装与配置手册
+---
+sidebar_position: 1
+sidebar_label: WIFI模块
+---
 
-## 目录
+# GP-PWB1-PC200B WIFI模块安装与配置手册
 
 ## 安全须知
 
