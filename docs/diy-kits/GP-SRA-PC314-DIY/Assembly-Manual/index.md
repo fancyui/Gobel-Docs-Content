@@ -13,23 +13,6 @@ sidebar_label: Assembly Manual
 
 **Applicable Product:** LiFePO4 High Voltage Battery DIY Kit
 
-## Table of Contents
-
-1. [Safety Precautions](#Safety-Precautions)
-2. [Product Introduction](#Product-Introduction)
-3. [Parts List](#Parts-List)
-4. [Tools and Materials Preparation](#Tools-and-Materials-Preparation)
-5. [Screw Torque Requirements](#Screw-Torque-Requirements)
-6. [Assembly Steps](#Assembly-Steps)
-   - [Fan Assembly Pre-installation](#Fan-Assembly-Pre-installation)
-   - [Enclosure Panel Assembly Pre-installation](#Enclosure-Panel-Assembly-Pre-installation)
-   - [Series Cable Pre-installation](#Series-Cable-Pre-installation)
-   - [Main Battery Pack Assembly](#Main-Battery-Pack-Assembly)
-   - [Electrical Connections](#Electrical-Connections)
-   - [Final Assembly Completion](#Final-Assembly-Completion)
-7. [Connection Steps](#Connection-Steps)
-8. [Port Diagram](#Port-Diagram)
-
 ## Safety Precautions
 
 :::danger Electrical Safety
