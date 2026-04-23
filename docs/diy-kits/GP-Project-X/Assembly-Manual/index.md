@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: GP-Project-X Assembly Manual
+sidebar_label: Assembly Manual
 toc_min_heading_level: 2
 description: GP-Project-X LiFePO4 Low-Voltage Battery DIY Kit Official Assembly Manual, including parts list, module assembly, and main assembly steps.
 keywords: [GP-Project-X, LiFePO4 battery, battery kit, DIY, assembly manual, Gobel Power]
