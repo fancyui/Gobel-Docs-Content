@@ -1,570 +1,398 @@
 ---
 sidebar_position: 1
-sidebar_label: 储能电池
+sidebar_label: Installation Manual
 toc_min_heading_level: 2
-description: Gobel Power 51.2V 628Ah 磷酸铁锂储能电池安装手册，含接线、通讯配置与调试指南。
-keywords: [GP-PB5-PC628, 磷酸铁锂储能电池, 安装手册, diy, 手册]
+description: Gobel Power 51.2V 628Ah LiFePO4 Low-Voltage Energy Storage Battery Installation Manual
+keywords: [Gobel Power, GP-PB5-PC628, LiFePO4, Energy Storage Battery, DIY, Manual]
 ---
 
-# 51.2V 628AH 磷酸铁锂储能电池 安装手册
+# GP-PB5-PC628 Installation Manual
 
-![GP-PB5-PC628 储能电池](images/GP-PB5-PC628.01.jpg)
+<a id="Product-Overview"></a>
+## Product Overview
 
-| 项目 | 参数 |
-| :-- | :-- |
-| 品牌 | Gobel Power |
-| 产品名称 | 51.2V628AH 磷酸铁锂储能电池 |
-| 产品型号 | GP-PB5-PC628 |
-| 额定电压 | 51.2V |
-| 额定容量 | 628Ah |
-| 额定能量 | 约 32.15kWh |
-| 电芯类型 | 314Ah 磷酸铁锂（LFP） |
-| 电芯连接方式 | 16S2P |
-| 电池管理系统 | GP-PC300 BMS |
-| 手册类型 | 安装手册 |
+![GP-PB5-PC628 Energy Storage Battery](images/gp-pb5-pc628.jpg)
 
-本手册用于指导 **GP-PB5-PC628 储能电池** 的安装、接线、通讯配置及开机调试。安装前请仔细阅读本手册，特别是安全须知部分。
+| Item | Specification |
+| :--- | :--- |
+| Product Model | GP-PB5-PC628 |
+| Brand | Gobel Power |
+| Product Type | 51.2V 628Ah LiFePO4 Low-Voltage Energy Storage Battery |
+| Cell Configuration | 314Ah LiFePO4 (LFP) cells, 16S2P connection |
+| Rated Voltage | 51.2V |
+| Rated Capacity | 628Ah |
+| Battery Management System | GP-PC300 BMS |
+| Dimensions (L x W x H) | 764 x 316 x 920mm |
+| Weight | 320kg |
 
-## 目录
+<a id="Safety-Instructions"></a>
+## Safety Instructions
 
-1. [安全须知](#安全须知)
-2. [产品简介](#产品简介)
-3. [部件清单](#部件清单)
-4. [工具与材料准备](#工具与材料准备)
-5. [螺丝扭矩要求](#螺丝扭矩要求)
-6. [产品接口说明](#产品接口说明)
-7. [安装前检查](#安装前检查)
-8. [安装](#安装)
-9. [逆变器与电池电力连接](#逆变器与电池电力连接)
-10. [逆变器与电池通讯连接](#逆变器与电池通讯连接)
-11. [协议设置](#协议设置)
-12. [检查连接与开机](#检查连接与开机)
-13. [产品维护](#产品维护)
-14. [附录](#附录)
-15. [联系方式](#联系方式)
+Before installing, using, and maintaining this product, please read and understand the following safety instructions carefully. Failure to follow these instructions may result in personal injury, equipment damage, or property loss.
 
-## 安全须知
-
-安装和使用本产品前，请仔细阅读全部安全须知。不遵守以下安全要求在可能导致人身伤害、设备损坏或火灾。
-
-### 电气安全
-
-:::danger 触电风险
-本产品额定电压为 51.2V，虽然属于安全超低电压范围，但多台电池串联或并联后电压和电流可能达到危险水平。进行电气连接时，务必确保所有设备处于断电状态。
+:::danger Electric Shock Hazard
+This product is a high-voltage energy storage device. Improper operation may cause serious electric shock accidents. Before performing any electrical connections or maintenance operations, be sure to disconnect the battery circuit breaker and turn off the BMS low-voltage switch.
 :::
 
-:::caution 短路防护
-电池正负极短路会产生极大电流，导致电弧、灼伤甚至火灾。操作时请勿佩戴金属首饰（戒指、手表等），使用带绝缘手柄的工具，每次只操作一根线缆。
+:::caution Battery Safety
+- Do not short-circuit the battery positive and negative terminals. Short-circuiting will generate extremely high current, which may cause fire or explosion
+- Before operation, ensure the battery positive and negative terminals are correctly connected. Reverse connection will damage the equipment
+- Do not use open flames or spark-producing equipment near the battery
+- If the battery casing is deformed, leaking, or abnormally hot, stop using it immediately and contact technical support
 :::
 
-:::note 绝缘要求
-所有线缆接头应做好绝缘处理，接线端子需紧固到位。连接前检查线缆绝缘层是否完好，如有破损请更换后再使用。
+:::caution Handling Safety
+This product weighs 320kg. Use appropriate handling equipment and work with multiple people when moving it. Watch for obstacles on the floor while moving to prevent the equipment from tipping over and causing personal injury.
 :::
 
-### 电池安全
-
-:::danger 电池安全
-- 严禁将电池投入火中或加热，可能导致爆炸
-- 严禁用金属物体同时接触正负极，造成短路
-- 严禁刺穿、撞击或挤压电池外壳
-- 如果电池出现鼓包、漏液、冒烟或异味，立即停止使用并联系技术支持
+:::note Operator Requirements
+Installation and maintenance operations should be performed by professionals with electrical knowledge. Do not install the equipment yourself if you are not familiar with electrical equipment operation.
 :::
 
-:::caution 温度要求
-电池应在 0°C 至 50°C 的环境温度下充电，-20°C 至 60°C 的环境温度下放电。超出此温度范围可能导致电池性能下降或永久损坏。
+:::note Working Environment Requirements
+- The installation site should be dry and well-ventilated
+- Keep away from flammable and explosive materials
+- Ambient temperature: 0°C ~ 50°C
+- Relative humidity: not exceeding 95% RH (non-condensing)
 :::
 
-:::note 正负极确认
-连接电源线前，务必用万用表确认电池正负极端子极性，确保与逆变器极性对应。反接可能导致设备损坏。
+<a id="Product-Introduction"></a>
+## Product Introduction
+
+This product is the GP-PB5-PC628 51.2V 628Ah LiFePO4 (LiFePO₄) low-voltage energy storage battery. It utilizes high-performance 314Ah LiFePO4 cells connected in a 16S2P (16 series, 2 parallel) configuration and is equipped with the **GP-PC300 BMS ([Battery Management System](#Product-Introduction)**) for comprehensive battery monitoring and protection.
+
+### Key Features
+
+- **High Capacity Energy Storage**: Rated capacity of 628Ah, suitable for home and small commercial energy storage needs
+- **Safe and Reliable**: LiFePO4 cells have stable chemical properties and excellent thermal stability
+- **Intelligent BMS Management**: Real-time monitoring of battery voltage, current, temperature, SOC (State of Charge) and other parameters, providing multiple protections including overcharge, over-discharge, over-temperature, and short circuit
+- **Flexible Expansion**: Supports parallel use of multiple batteries for easy capacity expansion
+- **Standard Interfaces**: Provides RS485, RS232, CAN and other communication interfaces, compatible with mainstream inverters
+
+### Applicable Scenarios
+
+- Home solar energy storage systems
+- Small commercial energy storage systems
+- Uninterruptible Power Supply (UPS) systems
+- Off-grid energy storage systems
+
+<a id="Parts-List"></a>
+## Parts List
+
+After opening the package, check the product and accessories against the table below to confirm all parts are complete and intact.
+
+| No. | Name | Specification/Quantity | Image |
+| :---: | :---: | :---: | :---: |
+| <a id="Part01">01</a> | GP-PB5-PC628 Energy Storage Battery | 51.2V 628Ah, 1 unit | ![GP-PB5-PC628 Energy Storage Battery](images/gp-pb5-pc628-1.jpg) |
+| <a id="Part02">02</a> | Positive Power Cable | Red, M10 copper lugs at both ends, 1 piece (included per order) | ![Positive Power Cable](images/500mm-m8-m10-cable-p.jpg) |
+| <a id="Part03">03</a> | Negative Power Cable | Black, M10 copper lugs at both ends, 1 piece (included per order) | ![Negative Power Cable](images/500mm-m8-m10-cable-n.jpg) |
+| <a id="Part04">04</a> | RS232 Communication Cable | RJ12 to USB, 1 piece | ![RS232 Communication Cable](images/usb-rs232-cable.jpg) |
+| <a id="Part05">05</a> | Inverter Communication Cable | RJ45 at both ends, 1 piece (can also be used as a parallel cable) | ![Inverter Communication Cable](images/rj45-net-cable.jpg) |
+
+:::note
+The inclusion of the **Positive Power Cable ([02](#Part02))** and **Negative Power Cable ([03](#Part03))** with the product depends on the order. If not included, please prepare power cables that match the specifications on your own.
 :::
 
-### 机械安全
+<a id="Product-Interface"></a>
+## Product Interface Description
 
-:::caution 重物搬运
-本产品重量较大，搬运时请使用脚轮推行，或由两人以上协作搬运。严禁单人徒手搬抬，防止砸伤或扭伤。
+![GP-PB5-PC628 Interface Panel Diagram](images/gp-pb5-pc628-diagram.jpg)
+
+The following diagram illustrates the interfaces, indicator lights, and operating components on the battery panel (numbers in the diagram correspond to the table below):
+
+| No. | Name | Description |
+| :---: | :---: | :--- |
+| 1 | Output Negative | 300A terminal, M10 threaded hole |
+| 2 | Output Positive | 300A terminal, M10 threaded hole |
+| 3 | Circuit Breaker | Controls the main circuit on/off of the battery |
+| 4 | DIP Switch (ADS) | 4-position DIP switch for setting the battery parallel address |
+| 5 | Reset Switch (RST) | Long press to reset BMS status |
+| 6 | ON/OFF Indicator | Indicates battery switch status |
+| 7 | RUN Indicator | Indicates battery operating status |
+| 8 | Alarm Indicator (ALM) | Lights up when battery fault or alarm occurs |
+| 9 | SOC Indicator | Indicates battery state of charge |
+| 10 | RS485C Port | Parallel communication interface |
+| 11 | RS485B Port | Parallel communication interface |
+| 12 | RS232 Port | Host computer communication interface |
+| 13 | CAN Port | Inverter communication interface |
+| 14 | RS485A Port | Inverter communication interface |
+| 15 | Dry Contact (DRY) | Dry contact output interface |
+| 16 | Casters | Bottom moving casters for easy movement and positioning |
+| 17 | Display | Shows charge/discharge status and SOC information |
+| 18 | Low-Voltage Switch | Turns BMS on or off |
+| 19 | SOC Light Bar | Visually displays battery state of charge |
+
+For pin definitions of each communication interface, refer to the [Product Communication Pin Definitions](#Communication-Pin-Definitions) section in the [Appendix](#Appendix).
+
+<a id="Installation-Requirements"></a>
+## Installation Requirements
+
+### Installation Environment
+
+- **Floor**: The installation floor should be level and sturdy, with sufficient load-bearing capacity (product weight 320kg)
+- **Ventilation**: The installation site should be well-ventilated to prevent heat accumulation
+- **Environmental Conditions**: Dry, clean, free of corrosive gases or dust; ambient temperature 0°C ~ 50°C, relative humidity not exceeding 95% RH (non-condensing)
+- **Safety Distance**: Keep away from flammable and explosive materials and water sources
+
+### Installation Clearance
+
+To ensure heat dissipation and maintenance access, maintain sufficient clearance between the battery and walls or other equipment:
+
+- Distance from both sides of the battery to walls: ≥ 100mm
+- Distance from the top of the battery to overhead obstacles: ≥ 300mm
+- Reserve at least 800mm of operating space in front of the battery
+
+### Tool Preparation
+
+Prepare the following tools and instruments before installation:
+
+- Torque wrench
+- Screwdriver set
+- Multimeter
+- Insulated gloves
+- Windows computer (for protocol settings)
+
+### Screw Torque Requirements
+
+When making electrical connections, tighten the screws according to the torque values specified in the table below:
+
+| Screw Specification | Torque Requirement |
+| :------: | :------: |
+| M6 | 8N-m |
+| M8 | 15N-m |
+| M10 | 15 ~ 20N-m |
+
+<a id="Pre-Installation-Check"></a>
+## Pre-Installation Check
+
+After receiving the product, perform the unpacking inspection as follows:
+
+1. Remove the energy storage battery ([01](#Part01)) from the wooden crate and check whether the outer packaging and product appearance are intact.
+
+2. Check the product and accessories against the [Parts List](#Parts-List) for any missing or damaged items.
+
+3. Press the [**Low-Voltage Switch**](#Product-Interface) on the panel to power on, and observe whether the [**Display**](#Product-Interface) and [**SOC Light Bar**](#Product-Interface) function normally.
+
+4. Turn the [**Circuit Breaker**](#Product-Interface) to the ON position, and use a multimeter to measure the voltage at the battery [**Positive**](#Product-Interface) and [**Negative**](#Product-Interface) terminals. The normal voltage should be between 40V and 58V.
+
+5. If all checks are normal, proceed to the next installation step.
+
+:::caution
+If you find product damage, missing accessories, or abnormal voltage, do not continue with installation. Contact Gobel Power technical support promptly.
 :::
 
-:::note 安装位置
-电池应安装在平整、坚实的地面上，周围预留至少 30cm 的通风空间。严禁安装在阳光直射、潮湿、多尘或有腐蚀性气体的环境中。
+<a id="Installation"></a>
+## Installation
+
+1. Turn off the [**Circuit Breaker**](#Product-Interface) of the energy storage battery ([01](#Part01)), and press the [**Low-Voltage Switch**](#Product-Interface) to power off.
+
+2. Move the battery to the predetermined installation location and lock the bottom [**Casters**](#Product-Interface) to prevent movement.
+
+:::caution
+Pay attention to the floor levelness when moving the battery to avoid excessive tilting. The battery weighs 320kg. Be sure to prioritize safety when moving to prevent tipping and injury.
 :::
 
-### 一般安全
+<a id="Inverter-Battery-Power-Connection"></a>
+## Inverter and Battery Power Connection
 
-- 安装工作应由具备基本电气知识的成人完成
-- 确保工作区域干燥、通风良好、光线充足
-- 儿童和宠物应远离安装区域
-- 使用符合安全标准的合格工具
-- 安装前关闭所有相关设备的电源
-- 如需上墙安装或固定，必须使用合适的膨胀螺丝固定在实体墙上
+1. Ensure other equipment such as the inverter is installed in place, and power off and disconnect the inverter. Also consult the inverter manual for sections related to battery connection.
 
-## 产品简介
+2. Connect one end of the **Positive Power Cable ([02](#Part02))** to the battery **Positive** terminal and the other end to the inverter's battery input positive terminal. Connect one end of the **Negative Power Cable ([03](#Part03))** to the battery **Negative** terminal and the other end to the inverter's battery input negative terminal.
 
-本产品为 Gobel Power **GP-PB5-PC628 磷酸铁锂储能电池组**，专为家庭储能、商业储能及离网系统设计。
-
-### 主要特点
-
-- **大容量设计**：额定容量 628Ah，额定能量约 32.15kWh，满足长时间储能需求
-- **高安全性电芯**：采用 314Ah 磷酸铁锂（LFP）电芯，热稳定性好，循环寿命长
-- **16S2P 电芯结构**：16 串 2 并连接方式，确保电压均衡与一致性
-- **智能 BMS 管理**：内置 GP-PC300 电池管理系统，提供过充、过放、过流、短路、温度等多重保护
-- **丰富通讯接口**：支持 RS485、CAN、RS232 等多种通讯协议，兼容主流品牌逆变器
-- **便捷移动**：底部配有脚轮，方便移动和安装就位
-
-### 适用场景
-
-- 家庭光伏储能系统
-- 商业储能电站
-- 离网/微网储能系统
-- 应急备用电源
-
-## 部件清单
-
-请打开包装后核对以下部件，如有缺失或损坏请及时联系供应商。
-
-|         编号          |               名称               |    规格/数量     |                   图片                   |
-| :-------------------: | :------------------------------: | :--------------: | :--------------------------------------: |
-| <a id="Part01">01</a> | GP-PB5-PC628 磷酸铁锂储能电池主机 | 额定能量 32.15kWh / 1 台 | ![储能电池主机](images/GP-PB5-PC628.10.jpg) |
-| <a id="Part02">02</a> |  正极线缆（红色，50mm² 电源线）  |      1 条       |  ![正极线缆](images/GP-PB5-PC628.11.jpg)  |
-| <a id="Part03">03</a> |  负极线缆（黑色，50mm² 电源线）  |      1 条       |  ![负极线缆](images/GP-PB5-PC628.12.jpg)  |
-| <a id="Part04">04</a> |      RS232 通信线缆（RJ12 转 USB）       |      1 条       | ![RS232通信线缆](images/GP-PB5-PC628.13.jpg) |
-| <a id="Part05">05</a> |  逆变器并联通讯线缆 |      1 条       | ![逆变器并联通讯线缆](images/GP-PB5-PC628.14.jpg) |
-
-## 工具与材料准备
-
-以下工具和材料不随产品附带，安装前请自行准备：
-
-|    工具/材料    |         用途         |         说明         |
-| :-------------: | :------------------: | :------------------: |
-|     万用表      | 测量电池电压及极性确认 | 直流电压量程 ≥ 100V  |
-|    绝缘螺丝刀   | 紧固接线端子         | 十字/一字各一把       |
-|    力矩扳手     | 按标准扭矩紧固螺丝    | 量程范围 5~25N·m     |
-|  Windows 电脑   | 运行上位机软件以设置通讯协议 | 需具备 USB 接口 |
-| 上位机软件程序  | 设置 BMS 通讯协议    | 请联系供应商获取安装包 |
-
-## 螺丝扭矩要求
-
-在安装和接线过程中，请按照以下扭矩标准紧固螺丝。扭矩不足可能导致接触不良和发热，扭矩过大可能损坏螺纹或端子。
-
-| 螺丝规格 |   扭矩要求   |
-| :------: | :----------: |
-|    M6    |    8N·m     |
-|    M8    |    15N·m    |
-|   M10    | 15 ~ 20N·m |
-
-:::caution 扭矩控制
-请使用力矩扳手进行紧固，避免凭手感操作。电气连接端子扭矩不足是大电流应用中常见的故障原因。
+:::caution
+When connecting, ensure the positive and negative terminals are correctly matched. Reverse connection will cause severe damage to the equipment.
 :::
 
-## 产品接口说明
+3. If multiple batteries are used in parallel, connect the batteries in parallel first before connecting to the inverter. Each battery has two pairs of positive and negative terminals, with each terminal rated for a maximum current of 300A. There are two scenarios:
 
-安装前请熟悉电池面板上的各接口和组件位置。
+   - **Scenario 1**: If the inverter input/output current is less than 300A, use positive and negative cables to connect the positive and negative terminals of adjacent batteries to each other, then connect the two end batteries to the inverter.
 
-![产品面板接口示意图](images/GP-PB5-PC628.03.jpg)
+   - **Scenario 2**: If the inverter input/output current is greater than 300A, connect the positive and negative terminals of each battery to a busbar, then connect the busbar to the inverter.
 
-| 编号 |    名称    |             功能说明             |
-| :--: | :--------: | :------------------------------: |
-|  1   |  输出正极  | 直流电源正极输出端子，连接逆变器电池输入正极 |
-|  2   |  输出负极  | 直流电源负极输出端子，连接逆变器电池输入负极 |
-|  3   |   断路器   | 电池总电路开关，ON 为接通，OFF 为断开 |
-|  4   |   干接点   | 干接点信号接口，用于外部控制或告警输出 |
-|  5   |  拨码开关  | 用于设置电池主从机身份（主机/从机编号） |
-|  6   |  复位开关  | 按下可复位 BMS 系统 |
-|  7   | 开关指示灯 | 指示电池弱电系统是否已启动 |
-|  8   | 运行指示灯 | 电池正常运行时常亮 |
-|  9   | 告警指示灯 | 电池出现异常时亮起或闪烁 |
-|  10  | SOC 指示灯 | 显示电池剩余电量状态 |
-|  11  |  RS485A  | RS485 通讯接口 A，用于连接逆变器 BMS 通讯 |
-|  12  |    CAN     | CAN 通讯接口，用于连接逆变器 BMS 通讯 |
-|  13  |   RS232   | RS232 通讯接口，用于连接电脑进行协议配置 |
-|  14  |  RS485B  | RS485 通讯接口 B，用于电池并联通讯 |
-|  15  |  RS485C  | RS485 通讯接口 C，用于电池并联通讯 |
-|  16  |   显示屏   | 显示电池电压、电流、SOC、温度等实时信息 |
-|  17  |  弱电开关  | 控制 BMS 弱电系统开关，短按开机，长按关机 |
-|  18  |   灯条    | 装饰及状态指示 LED 灯条 |
-|  19  |   脚轮    | 底部万向轮，方便移动电池至安装位置 |
+For connection diagrams, refer to the [Battery and Inverter Connection Diagrams](#Connection-Diagrams) section in the [Appendix](#Appendix).
 
-:::info 接口参考
-详细引脚定义请参见附录中的 [产品通信引脚定义](#产品通信引脚定义)。
+<a id="Inverter-Battery-Communication-Connection"></a>
+## Inverter and Battery Communication Connection
+
+1. **DIP Switch Settings**. If there is only one battery, it is the master. Set the [**DIP Switch**](#Product-Interface) to ON, OFF, OFF, OFF. If multiple batteries are used in parallel, select one as the master and set its DIP switch to ON, OFF, OFF, OFF. The other batteries act as slaves. Refer to the [DIP Switch Settings Table](#DIP-Switch-Settings) in the [Appendix](#Appendix) for slave DIP switch settings.
+
+2. **Parallel Communication Connection**. When multiple batteries are used in parallel, use parallel communication cables to connect the RS485B and RS485C ports of each battery in sequence: connect the RS485B of the first battery to the RS485C of the second battery, the RS485B of the second battery to the RS485C of the third battery, and so on.
+
+3. **Inverter Communication Connection**. Connect one end of the **Inverter Communication Cable ([05](#Part05))** to the [**RS485A Port**](#Product-Interface) or [**CAN Port**](#Product-Interface) of the master battery (refer to the inverter manual to determine whether the inverter uses RS485 or CAN protocol for battery communication), and connect the other end to the inverter's BMS communication interface.
+
+:::caution
+Verify whether the pin definitions of the inverter's BMS communication interface match those of the battery's RS485A or CAN interface. The inverter communication cable included with this product has a straight-through pinout at both ends. If the pin definitions of the inverter and battery differ, you need to create a custom communication cable with the appropriate pinout or purchase an adapter cable from the inverter manufacturer (e.g., Victron inverters).
 :::
 
-## 安装前检查
+For pin definitions of each communication interface, refer to the [Product Communication Pin Definitions](#Communication-Pin-Definitions) section in the [Appendix](#Appendix).
 
-安装前请按以下步骤对电池进行全面检查，确保产品完好无损且功能正常。
+<a id="Protocol-Settings"></a>
+## Protocol Settings
 
-### 步骤 1：取出电池
+1. Press the [**Low-Voltage Switch**](#Product-Interface) on the master battery to start the battery. Keep the [**Circuit Breaker**](#Product-Interface) in the OFF position.
 
-将 **GP-PB5-PC628 储能电池主机（[01](#Part01)）** 从运输木箱中取出。搬运时注意使用脚轮推行或多人协作，避免砸伤。
+2. Use the **RS232 Communication Cable ([04](#Part04))** to connect the Windows computer to the master battery: connect the RJ12 end of the cable to the battery's [**RS232 Port**](#Product-Interface), and insert the USB end into a computer USB port. Find and run the battery host computer software on the computer.
 
-### 步骤 2：检查外观与配件
-
-检查电池主机外观是否有碰撞、变形或破损。核对 **部件清单** 中的所有配件是否齐全，检查各线缆绝缘层有无破损、接头是否完好。
-
-:::caution 发现异常
-如发现产品或配件有缺失、损坏，请暂停安装并联系供应商处理，切勿继续安装已损坏的设备。
+:::note
+For detailed operation of the host computer software, refer to the host computer operation process documentation (reserved link for host computer detailed operation guide).
 :::
 
-### 步骤 3：开机自检
+3. Select the communication protocol that matches the inverter in the host computer software.
 
-按下电池面板上的 **弱电开关**（编号 17），启动 BMS 弱电系统，观察以下内容：
+<a id="Check-Connections-and-Startup"></a>
+## Check Connections and Startup
 
-- **显示屏**（编号 16）是否正常亮起并显示信息
-- **灯条**（编号 18）及各类指示灯是否正常显示
+1. Verify that the power and communication connections are normal, ensuring all cables are securely connected and not loose.
 
-如屏幕无法点亮或指示灯异常，请先排查后再继续。
+2. Power on all batteries and turn on the [**Circuit Breaker**](#Product-Interface), then turn on the inverter's power switch.
 
-### 步骤 4：测量电压
+3. Set the battery type to Lithium Battery in the inverter.
 
-将电池面板上的 **断路器**（编号 3）拨到 ON 位置，使用万用表直流电压档测量电池 **输出正极**（编号 1）与 **输出负极**（编号 2）之间的电压。
+4. Check the battery information displayed in the inverter to confirm that data (such as battery voltage, battery SOC, temperature, etc.) is correctly received from the battery BMS.
 
-:::note 正常电压范围
-电压在 **40V ~ 58V** 之间均为正常。如果电压为 0V 或超出此范围，请确认断路器是否已正确拨至 ON 位置，或联系技术支持。
+5. If data can be read correctly in the inverter, the installation is complete, and charge/discharge testing can be performed.
+
+:::tip
+If the inverter cannot read battery data after startup, check whether the communication cable is properly connected and whether the protocol settings are correct.
 :::
 
-### 步骤 5：确认
+<a id="Product-Maintenance"></a>
+## Product Maintenance
 
-以上检查全部正常后，方可进入下一步安装操作。
+If the battery is not used for an extended period, perform maintenance as follows:
 
-## 安装
+- Fully charge the battery, then turn off the [**Circuit Breaker**](#Product-Interface) and the [**Low-Voltage Switch**](#Product-Interface) (turn off the BMS).
+- Check the battery voltage at least every 3 months. If the voltage drops below 51V, charge it promptly.
 
-完成安装前检查后，按以下步骤将电池安装到指定位置。
-
-### 步骤 1：关机
-
-将电池面板上的 **断路器**（编号 3）拨回到 OFF 位置，然后长按 **弱电开关**（编号 17）将 BMS 弱电系统完全关闭。确认显示屏和所有指示灯均已熄灭。
-
-### 步骤 2：定位与固定
-
-将 **GP-PB5-PC628 储能电池主机（[01](#Part01)）** 推行至预定安装位置。到达位置后，踩下各脚轮的刹车锁止机构，确保电池不会意外滑动。
-
-:::note 安装位置要求
-- 地面应平整、坚实，能承受电池重量
-- 电池四周至少预留 30cm 空间，确保通风散热
-- 远离热源、水源和易燃物品
+:::danger
+Battery damage caused by failure to charge in a timely manner is not covered by the warranty. Prolonged storage without charging will lead to over-discharge of the battery, resulting in irreversible capacity loss or even battery scrapping.
 :::
 
-## 逆变器与电池电力连接
+<a id="Appendix"></a>
+## Appendix
 
-完成电池安装定位后，进行电池与逆变器之间的电力接线。
+<a id="Connection-Diagrams"></a>
+### Battery and Inverter Connection Diagrams
 
-### 步骤 1：确认逆变器状态
+**Single Battery and Single Inverter Connection Diagram**
 
-确保逆变器及其他相关设备已安装到位。将逆变器关机并切断其所有电源输入。查阅逆变器使用手册中与电池连接相关的章节，确认逆变器电池输入端口的规格和要求。
+![Single Battery and Inverter Connection Diagram](images/singel-pack-connection.jpg)
 
-:::danger 断电操作
-进行电力接线前，务必确保所有设备（电池、逆变器、光伏组件等）均处于断电关机状态，防止触电或设备损坏。
+:::note
+In the diagram, the red cable is the positive power cable, the black cable is the negative power cable, and the green cable is the communication cable.
 :::
 
-### 步骤 2：连接电源线缆
+**One Inverter and Multiple Batteries Connection Diagram**
 
-1. 取出 **正极线缆（红色，50mm² 电源线）（[02](#Part02)）**，一端接到电池的 **输出正极**（编号 1）接线端子，另一端接到逆变器的电池输入正极端子
-2. 取出 **负极线缆（黑色，50mm² 电源线）（[03](#Part03)）**，一端接到电池的 **输出负极**（编号 2）接线端子，另一端接到逆变器的电池输入负极端子
+![Multiple Batteries and Inverter Connection Diagram](images/multi-pack-connection.jpg)
 
-:::caution 极性确认
-接线前务必用万用表再次确认电池正负极端子的极性。正极接正极，负极接负极，严禁反接。紧固时参照 [螺丝扭矩要求](#螺丝扭矩要求) 章节的标准扭矩值。
+:::note
+In the diagram, the red cable is the positive power cable, the black cable is the negative power cable, and the green cable is the communication cable.
 :::
 
-### 步骤 3：多台电池并联（如适用）
+<a id="Product-Dimensions"></a>
+### Product Dimensions
 
-如果系统中只有一台电池，跳过此步骤。如需连接多台电池并联运行：
+Dimensions (L x W x H): 764 x 316 x 920mm
+Weight: 320kg
 
-每台 **GP-PB5-PC628 储能电池主机（[01](#Part01)）** 配有两对正负极端子，每个端子最大承载电流为 **200A**，因此分以下两种情况处理：
+![GP-PB5-PC628 Product Dimensions](images/gp-pb5-pc628-dimension.jpg)
 
-**情况 A：逆变器输入电流 ≤ 200A**
+<a id="Communication-Pin-Definitions"></a>
+### Product Communication Pin Definitions
 
-可使用电源线缆将相邻两台电池的正极端子与正极端子连接、负极端子与负极端子连接（电池并联），然后将两端电池的正负极分别连接到逆变器的电池输入端口。
+<a id="RS485A-Port"></a>
+#### RS485A Port
 
-**情况 B：逆变器输入电流 > 200A**
+![RS485A Port Pin Definitions](images/rs485a-can-pin.jpg)
 
-需要将每台电池的正极端子分别连接到汇流排（正极），负极端子分别连接到汇流排（负极），再将汇流排连接到逆变器的电池输入端口。
-
-:::info 汇流排
-汇流排为额外配件，不随本产品附带，请根据系统电流需求自行选购合适规格的铜汇流排。
-:::
-
-## 逆变器与电池通讯连接
-
-完成电力接线后，进行电池与逆变器之间的通讯连接。
-
-### 步骤 1：设置拨码开关
-
-根据系统中电池的数量，设置 **拨码开关**（编号 5）：
-
-**单台电池：**
-该电池即为主机，将拨码开关拨为：`ON OFF OFF OFF`。
-
-**多台电池并联：**
-选择其中一台作为主机，将其拨码开关拨为：`ON OFF OFF OFF`。其余电池作为从机，按顺序参考以下拨码设置：
-
-| 序号 | 拨码 1 | 拨码 2 | 拨码 3 | 拨码 4 |  身份  |
-| :--: | :----: | :----: | :----: | :----: | :----: |
-|  01  |   ON   |  OFF   |  OFF   |  OFF   |  主机  |
-|  02  |  OFF   |   ON   |  OFF   |  OFF   |  从机  |
-|  03  |   ON   |   ON   |  OFF   |  OFF   |  从机  |
-|  04  |  OFF   |  OFF   |   ON   |  OFF   |  从机  |
-| ...  |   …    |   …    |   …    |   …    |   …    |
-
-:::info 完整拨码表
-更多从机编号对应的拨码设置，请参见附录中的 [拨码开关设置表](#拨码开关设置表)。
-:::
-
-### 步骤 2：电池并联通讯（仅多台电池时需要）
-
-如果只有一台电池，跳过此步骤。多台电池并联时：
-
-取出 **逆变器并联通讯线缆（[05](#Part05)）**，将第一台电池的 **RS485B**（编号 14）接口连接到第二台电池的 **RS485C**（编号 15）接口。如有第三台，则将第二台的 RS485B 连接到第三台的 RS485C，以此类推，形成菊花链连接。
-
-### 步骤 3：连接逆变器通讯线缆
-
-1. 查阅逆变器使用手册，确认逆变器使用 **RS485 协议**还是 **CAN 协议**与电池 BMS 通讯
-2. 取出 **逆变器并联通讯线缆（[05](#Part05)）**，一端接到主机电池的 **RS485A**（编号 11）或 **CAN**（编号 12）接口（根据逆变器协议选择对应接口）
-3. 另一端接到逆变器的 BMS 通讯接口
-
-:::caution 引脚定义检查
-产品附带的通讯线缆两端为对称（直通）连接。使用前请务必对比以下两端的引脚定义：
-
-- 逆变器 BMS 通讯接口的引脚定义
-- 电池 RS485A 或 CAN 接口的引脚定义（详见附录 [产品通信引脚定义](#产品通信引脚定义)）
-
-如果两端引脚定义不一致（如 Victron 等品牌逆变器），您需要自制通讯线缆或从逆变器厂商购买专用通讯线缆，否则通讯将无法正常建立。
-:::
-
-## 协议设置
-
-完成通讯连接后，需通过上位机软件设置电池 BMS 的通讯协议，使其与逆变器匹配。
-
-### 步骤 1：启动电池 BMS
-
-按下主机电池面板上的 **弱电开关**（编号 17），启动 BMS 弱电系统。注意：此时保持 **断路器**（编号 3）在 OFF 位置，不要打开。
-
-### 步骤 2：连接电脑
-
-1. 取出 **RS232 通信线缆（RJ12 转 USB）（[04](#Part04)）**
-2. 将线缆的 RJ12 端插入电池的 **RS232** 接口（编号 13）
-3. 将线缆的 USB 端插入 Windows 电脑的 USB 接口
-4. 在电脑上找到并运行 **电池上位机程序软件**
-
-:::info 上位机软件
-上位机软件的详细操作说明请参见《上位机操作指南》。如尚未安装该软件，请联系供应商获取安装包和操作文档。
-:::
-
-### 步骤 3：选择通讯协议
-
-在上位机软件界面中，根据所连接逆变器的品牌和型号，选择对应的通讯协议。常见的逆变器通讯协议包括 Pylontech、Growatt、Deye、Victron 等。
-
-:::tip 协议选择建议
-如果不确定应选择哪种协议，请查阅逆变器使用手册中关于电池通讯协议的说明，或咨询逆变器厂商技术支持。
-:::
-
-## 检查连接与开机
-
-完成所有接线和协议配置后，进入最后检查与开机流程。
-
-### 步骤 1：检查连接
-
-逐一确认以下连接是否正确可靠：
-
-- 所有电力线缆（正极/负极）接头已紧固到位，极性正确
-- 所有通讯线缆已插入对应接口并锁紧
-- 拨码开关设置正确
-- 汇流排（如使用）连接牢固
-
-### 步骤 2：开启电池
-
-1. 按下所有电池的 **弱电开关**（编号 17），启动各台电池的 BMS 弱电系统
-2. 将所有电池的 **断路器**（编号 3）拨到 ON 位置
-3. 打开逆变器的电源开关
-
-### 步骤 3：设置逆变器电池类型
-
-在逆变器的设置菜单中，将电池类型设置为"**锂电池**"（Lithium Battery）。具体操作方法因逆变器品牌而异，请参考逆变器使用手册。
-
-### 步骤 4：验证通讯数据
-
-在逆变器显示屏或监控界面中，查看是否已正确从电池 BMS 获取到实时数据，重点关注以下参数：
-
-- 电池电压
-- 电池 SOC（剩余电量百分比）
-- 电池温度
-- 充放电电流
-
-:::tip 通讯验证
-如果逆变器能正确显示以上数据，说明 BMS 通讯已正常建立，安装成功。
-:::
-
-### 步骤 5：充放电测试
-
-在逆变器中设置适当的充放电参数后，可进行充放电测试，验证系统在实际负载下的运行情况。
-
-:::caution 通讯异常处理
-如果逆变器无法正确读取电池数据，请检查：
-- 通讯线缆是否连接到正确的接口（RS485A 或 CAN）
-- 拨码开关是否正确设置
-- 上位机协议选择是否正确
-- 通讯线缆引脚定义是否与逆变器匹配（参见附录 [产品通信引脚定义](#产品通信引脚定义)）
-
-依次排查以上问题，必要时重做通讯连接和协议设置步骤。
-:::
-
-## 产品维护
-
-### 日常使用
-
-- 保持电池外观清洁，定期用干燥软布擦拭表面灰尘
-- 确保电池周围通风口未被遮挡
-- 定期检查线缆接头是否松动
-
-### 长期存储
-
-如果电池需要长期不使用，请按以下要求进行维护：
-
-1. 将电池充电至满电状态（SOC 100%）
-2. 关闭断路器，长按弱电开关将 BMS 关机
-3. 将电池存放在干燥、阴凉的环境中（建议温度 10°C ~ 30°C）
-4. 至少每 **3 个月** 检查一次电池电压
-5. 如果电压低于 **51V**，需及时对电池进行充电
-
-:::danger 保修说明
-长期存储期间未按要求及时充电导致的电池过放损坏，**不在产品保修范围之内**。请务必按要求定期检查和充电。
-:::
-
-## 附录
-
-### 电池与逆变器连接示意图
-
-#### 一台电池与一台逆变器连接
-
-![一台电池与一台逆变器连接示意图](images/GP-PB5-PC628.15.jpg)
-
-:::note 图示说明
-图中红色线缆为 **正极线缆（红色，50mm² 电源线）（[02](#Part02)）**，黑色线缆为 **负极线缆（黑色，50mm² 电源线）（[03](#Part03)）**，蓝色线缆为通讯线缆。
-
-此连接方式下，电池最大工作电流为 **200A DC**，逆变器功率须 **≤ 8kW**。
-:::
-
-#### 一台逆变器与多台电池连接
-
-![一台逆变器与多台电池连接示意图](images/GP-PB5-PC628.16.jpg)
-
-:::note 图示说明
-图中红色线缆为 **正极线缆（红色，50mm² 电源线）（[02](#Part02)）**，黑色线缆为 **负极线缆（黑色，50mm² 电源线）（[03](#Part03)）**，蓝色线缆为通讯线缆。
-
-此连接方式下，单台电池最大工作电流为 **200A DC**，逆变器功率须 **≤ 10kW**。
-:::
-
-#### 多台逆变器与多台电池连接
-
-![多台逆变器与多台电池连接示意图](images/GP-PB5-PC628.17.jpg)
-
-:::note 图示说明
-图中红色线缆为 **正极线缆（红色，50mm² 电源线）（[02](#Part02)）**，黑色线缆为 **负极线缆（黑色，50mm² 电源线）（[03](#Part03)）**，蓝色线缆为通讯线缆。
-
-此连接方式下，单台电池最大工作电流为 **200A DC**，逆变器功率须 **≥ 10kW**。
-:::
-
----
-
-### 产品尺寸图
-
-![产品尺寸图](images/GP-PB5-PC628.02.jpg)
-
-外形尺寸（长 × 宽 × 高）：**764 × 274 × 900 mm**
-
----
-
-### 产品通信引脚定义
-
-:::caution 接线前必读
-以下引脚定义用于制作通讯线缆时参考。如使用产品附带的通讯线缆，请确认逆变器端引脚定义是否与以下定义一致。若不一致，需自制或购买专用线缆。
-:::
-
-#### RS485A 端口
-
-![RS485A端口引脚定义](images/GP-PB5-PC628.04.jpg)
-
-| 引脚 | 定义 |
+| Pin | Definition |
 | :--: | :--: |
-|  1   |  B   |
-|  2   |  A   |
-|  3   | GND  |
-|  4   |  NC  |
-|  5   |  NC  |
-|  6   | GND  |
-|  7   |  A   |
-|  8   |  B   |
+| 1 | B |
+| 2 | A |
+| 3 | GND |
+| 4 | NC |
+| 5 | NC |
+| 6 | GND |
+| 7 | A |
+| 8 | B |
 
-#### CAN 端口
+<a id="CAN-Port"></a>
+#### CAN Port
 
-![CAN端口引脚定义](images/GP-PB5-PC628.04.jpg)
+![CAN Port Pin Definitions](images/rs485a-can-pin.jpg)
 
-| 引脚 |  定义  |
-| :--: | :----: |
-|  1   |   NC   |
-|  2   |  GND   |
-|  3   |   NC   |
-|  4   | CAN-H  |
-|  5   | CAN-L  |
-|  6   |   NC   |
-|  7   |   NC   |
-|  8   |   NC   |
-
-#### RS232 端口
-
-![RS232端口引脚定义](images/GP-PB5-PC628.05.jpg)
-
-| 引脚 | 定义 |
+| Pin | Definition |
 | :--: | :--: |
-|  1   |  NC  |
-|  2   |  NC  |
-|  3   | TXD  |
-|  4   | RXD  |
-|  5   | GND  |
-|  6   |  NC  |
+| 1 | NC |
+| 2 | GND |
+| 3 | NC |
+| 4 | CAN-H |
+| 5 | CAN-L |
+| 6 | NC |
+| 7 | NC |
+| 8 | NC |
 
-#### RS485B 和 RS485C 端口
+<a id="RS232-Port"></a>
+#### RS232 Port
 
-![RS485B和RS485C端口引脚定义](images/GP-PB5-PC628.06.jpg)
+![RS232 Port Pin Definitions](images/rs232-pin.jpg)
 
-| 引脚 | 定义 |
+| Pin | Definition |
 | :--: | :--: |
-|  1   |  B   |
-|  2   |  A   |
-|  3   | GND  |
-|  4   |  NC  |
-|  5   |  NC  |
-|  6   | GND  |
-|  7   |  A   |
-|  8   |  B   |
+| 1 | NC |
+| 2 | NC |
+| 3 | TXD |
+| 4 | RXD |
+| 5 | GND |
+| 6 | NC |
 
----
+<a id="RS485B-RS485C-Port"></a>
+#### RS485B and RS485C Ports
 
-### 拨码开关设置表
+![RS485B and RS485C Port Pin Definitions](images/rs485-pin.jpg)
 
-![拨码开关设置表](images/GP-PB5-PC628.07.jpg)
+| Pin | Definition |
+| :--: | :--: |
+| 1 | B |
+| 2 | A |
+| 3 | GND |
+| 4 | NC |
+| 5 | NC |
+| 6 | GND |
+| 7 | A |
+| 8 | B |
 
-| 序号 | 拨码 1 | 拨码 2 | 拨码 3 | 拨码 4 |  身份  |
-| :--: | :----: | :----: | :----: | :----: | :----: |
-|  00  |  OFF   |  OFF   |  OFF   |  OFF   | 无效   |
-|  01  |   ON   |  OFF   |  OFF   |  OFF   | 主机   |
-|  02  |  OFF   |   ON   |  OFF   |  OFF   | 从机   |
-|  03  |   ON   |   ON   |  OFF   |  OFF   | 从机   |
-|  04  |  OFF   |  OFF   |   ON   |  OFF   | 从机   |
-|  05  |   ON   |  OFF   |   ON   |  OFF   | 从机   |
-|  06  |  OFF   |   ON   |   ON   |  OFF   | 从机   |
-|  07  |   ON   |   ON   |   ON   |  OFF   | 从机   |
-|  08  |  OFF   |  OFF   |  OFF   |   ON   | 从机   |
-|  09  |   ON   |  OFF   |  OFF   |   ON   | 从机   |
-|  10  |  OFF   |   ON   |  OFF   |   ON   | 从机   |
-|  11  |   ON   |   ON   |  OFF   |   ON   | 从机   |
-|  12  |  OFF   |  OFF   |   ON   |   ON   | 从机   |
-|  13  |   ON   |  OFF   |   ON   |   ON   | 从机   |
-|  14  |  OFF   |   ON   |   ON   |   ON   | 从机   |
-|  15  |   ON   |   ON   |   ON   |   ON   | 从机   |
+<a id="DIP-Switch-Settings"></a>
+### DIP Switch Settings Table
 
-## 联系方式
+![DIP Switch Settings Table](images/adress-dial.jpg)
 
-如遇到无法解决的故障或对本产品有任何疑问，请联系 **Gobel Power** 技术支持：
+| Address | DIP Switch Status (1-2-3-4) | Description |
+| :--: | :---------------------: | :--: |
+| 00 | OFF-OFF-OFF-OFF | Invalid address |
+| 01 | ON-OFF-OFF-OFF | Master |
+| 02 | OFF-ON-OFF-OFF | Slave |
+| 03 | ON-ON-OFF-OFF | Slave |
+| 04 | OFF-OFF-ON-OFF | Slave |
+| 05 | ON-OFF-ON-OFF | Slave |
+| 06 | OFF-ON-ON-OFF | Slave |
+| 07 | ON-ON-ON-OFF | Slave |
+| 08 | OFF-OFF-OFF-ON | Slave |
+| 09 | ON-OFF-OFF-ON | Slave |
+| 10 | OFF-ON-OFF-ON | Slave |
+| 11 | ON-ON-OFF-ON | Slave |
+| 12 | OFF-OFF-ON-ON | Slave |
+| 13 | ON-OFF-ON-ON | Slave |
+| 14 | OFF-ON-ON-ON | Slave |
+| 15 | ON-ON-ON-ON | Slave |
 
-|     渠道     |             信息              |
-| :----------: | :---------------------------: |
-|   官方网站   | [www.gobelpower.com](https://www.gobelpower.com) |
-| 技术支持邮箱 |       cs@gobelpower.com       |
+<a id="Contact-Information"></a>
+## Contact Information
+
+If you encounter an issue that cannot be resolved or need technical support, please contact Gobel Power:
+
+| Item | Information |
+| :--- | :--- |
+| Official Website | [www.gobelpower.com](http://www.gobelpower.com) |
+| Technical Support Email | [cs@gobelpower.com](mailto:cs@gobelpower.com) |
