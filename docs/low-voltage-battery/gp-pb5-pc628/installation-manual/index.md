@@ -31,7 +31,7 @@ keywords: [Gobel Power, GP-PB5-PC628, LiFePO4, Energy Storage Battery, DIY, Manu
 Before installing, using, and maintaining this product, please read and understand the following safety instructions carefully. Failure to follow these instructions may result in personal injury, equipment damage, or property loss.
 
 :::danger Electric Shock Hazard
-This product is a high-voltage energy storage device. Improper operation may cause serious electric shock accidents. Before performing any electrical connections or maintenance operations, be sure to disconnect the battery circuit breaker and turn off the BMS low-voltage switch.
+This product is a energy storage device. Improper operation may cause serious electric shock accidents. Before performing any electrical connections or maintenance operations, be sure to disconnect the battery circuit breaker and turn off the BMS low-voltage switch.
 :::
 
 :::caution Battery Safety
@@ -162,6 +162,10 @@ When making electrical connections, tighten the screws according to the torque v
 | M8 | 15N-m |
 | M10 | 15 ~ 20N-m |
 
+:::warning Wiring Requirement
+This product supports parallel connection only. Do not connect batteries in series. Series connection may cause equipment damage or safety hazards.
+:::
+
 <a id="Pre-Installation-Check"></a>
 ## Pre-Installation Check
 
@@ -279,7 +283,7 @@ Battery damage caused by failure to charge in a timely manner is not covered by 
 ![Single Battery and Inverter Connection Diagram](images/singel-pack-connection.jpg)
 
 :::note
-In the diagram, the red cable is the positive power cable, the black cable is the negative power cable, and the green cable is the communication cable.
+In the diagram, the red cable is the positive power cable, the blue cable is the negative power cable, and the green cable is the communication cable.
 :::
 
 **One Inverter and Multiple Batteries Connection Diagram**
@@ -287,7 +291,7 @@ In the diagram, the red cable is the positive power cable, the black cable is th
 ![Multiple Batteries and Inverter Connection Diagram](images/multi-pack-connection.jpg)
 
 :::note
-In the diagram, the red cable is the positive power cable, the black cable is the negative power cable, and the green cable is the communication cable.
+In the diagram, the red cable is the positive power cable, the blue cable is the negative power cable, and the green cable is the communication cable.
 :::
 
 <a id="Product-Dimensions"></a>
