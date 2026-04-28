@@ -3,7 +3,9 @@
     "allow": [
       "Bash(python:*)",
       "Bash(python3 /Users/mac/.claude/skills/md-translator/scripts/split_chunks.py \"docs/bms/GP-PC200B/Datasheet/index.md\" \"tmp/GP-PC200B_Datasheet_index/chunks/\")",
-      "Bash(dir \".claude\")"
+      "Bash(dir \".claude\")",
+      "Bash(git *)",
+      "Bash(xxd)"
     ]
   }
 }
