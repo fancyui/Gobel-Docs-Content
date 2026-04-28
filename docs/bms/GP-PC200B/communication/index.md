@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Communication Connection Manual
+sidebar_label: Communication
 toc_min_heading_level: 2
 description: GP-PC200B BMS Communication Connection Manual, covering parallel connection, inverter connection, and protocol settings
 keywords: [GP-PC200B, BMS, Communication Connection, Inverter, Parallel Connection, Gobel Power, Manual]

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: 通讯连接手册
+sidebar_label: 通讯连接
 toc_min_heading_level: 2
 description: GP-PC200B BMS 通讯连接手册，涵盖并联、逆变器连接与协议设置
 keywords: [GP-PC200B, BMS, 通讯连接, 逆变器, 并联, Gobel Power, 手册]
