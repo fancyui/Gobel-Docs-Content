@@ -6,7 +6,7 @@ description: GP-WP1-PC314 is a 51.2V 314Ah LiFePO4 low-voltage energy storage ba
 keywords: [GP-WP1-PC314, low-voltage energy storage battery, LiFePO4 battery, datasheet]
 ---
 
-# GP-WP1-PC314 Product Datasheet
+# GP-WP1-PC314 Low-Voltage Energy Storage Battery Product Datasheet
 
 ![GP-WP1-PC314 Low-Voltage Energy Storage Battery](images/gp-wp1-pc314-2.jpg)
 
