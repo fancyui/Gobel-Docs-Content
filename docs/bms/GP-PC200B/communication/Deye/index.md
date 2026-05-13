@@ -6,7 +6,7 @@ description: GP-PC200B BMS connection and setup guide for Deye hybrid inverters
 keywords: [GP-PC200B, BMS, Deye, inverter, connection, setup, diy, manual]
 ---
 
-# GP-PC200B BMS Connection & Setup Manual
+# GP-PC200B BMS connection and setup guide for Deye hybrid inverters
 
 ![GP-PC200B BMS Connecting to Deye Inverter](images/deye.jpg)
 

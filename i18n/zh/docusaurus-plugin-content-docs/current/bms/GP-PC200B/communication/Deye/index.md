@@ -6,7 +6,7 @@ description: GP-PC200B BMS与德业混合逆变器的连接与设置指南
 keywords: [GP-PC200B, BMS, 德业, Deye, 逆变器, 连接, 设置, diy, 手册]
 ---
 
-# GP-PC200B BMS 连接设置手册
+# GP-PC200B BMS与德业混合逆变器的连接与设置指南
 
 ![GP-PC200B BMS 连接德业逆变器](images/deye.jpg)
 

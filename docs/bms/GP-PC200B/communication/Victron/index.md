@@ -6,7 +6,7 @@ description: GP-PC200B BMS to Victron Inverter Connection Setup Guide
 keywords: [GP-PC200B, Victron, Inverter, BMS, Connection Setup, diy, Manual]
 ---
 
-# GP-PC200B Victron Connection Setup Manual
+# GP-PC200B BMS to Victron Inverter Connection Setup Guide
 
 This manual describes how to connect and configure the Gobel Power GP-PC200B BMS battery system with a Victron inverter and Cerbo GX device.
 

@@ -6,7 +6,7 @@ description: GP-PC200B BMS与Victron逆变器连接设置教程
 keywords: [GP-PC200B, Victron, 逆变器, BMS, 连接设置, diy, 手册]
 ---
 
-# GP-PC200B Victron 连接设置手册
+# GP-PC200B BMS与Victron逆变器连接设置教程
 
 本手册介绍如何将 Gobel Power GP-PC200B BMS 电池系统与 Victron 逆变器及 Cerbo GX 设备进行连接和配置。
 
