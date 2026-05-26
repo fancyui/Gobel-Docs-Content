@@ -65,6 +65,7 @@ Power on the battery and observe whether the indicator light on the **WIFI Commu
 :::tip Notes
 1. The WIFI module only supports 2.4GHz WIFI networks (5GHz is not supported).
 2. Please download the **Gobel VRM** App from Google Play or the App Store before starting the operation.
+3. The phone must have Bluetooth enabled during the network pairing process.
 :::
 
 ### 1. Software Preparation

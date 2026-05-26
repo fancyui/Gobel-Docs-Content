@@ -64,6 +64,7 @@ GP-PWB1-PC200B WIFI模块是专为配备有 WIFI 端口的最新的 GP-PC200B BM
 :::tip 注意事项
 1. WIFI 模块仅支持 2.4GHz WIFI 网络（不支持 5GHz）。
 2. 请在 Google Play 或 App Store 下载 **Gobel VRM** App 后再开始操作。
+3. 配网过程中手机需要开启蓝牙。
 :::
 
 ### 1. 软件准备
