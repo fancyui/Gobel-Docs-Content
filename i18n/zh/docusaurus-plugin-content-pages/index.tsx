@@ -139,7 +139,7 @@ const products = [
   },
 ];
 
-function ProductCard({title, description, href, Icon}: {title: string; description: string; href: string; Icon: () => JSX.Element}) {
+function ProductCard({title, description, href, Icon}: {title: string; description: string; href: string; Icon: () => ReactNode}) {
   return (
     <Link to={href} className={styles.productCard}>
       <div className={styles.productIcon}>
