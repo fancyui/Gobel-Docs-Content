@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: Quick Installation Guide (PCBMS)
+sidebar_label: Quick Guide (PCBMS)
 toc_min_heading_level: 2
 description: Quick installation guide for the Gobel Power 51.2V 314Ah LiFePO4 low-voltage energy storage battery (PCBMS version)
 keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, LiFePO4, energy storage battery, quick installation]
