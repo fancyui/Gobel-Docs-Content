@@ -7,7 +7,6 @@ keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K
 
 # Gobel PowerFable 16 Product Introduction
 
-
 PowerFable 16 is a 51.2V 314Ah (approximately 16kWh) LiFePO₄ (lithium iron phosphate) low-voltage energy storage battery from Gobel Power. It uses high-performance 314Ah LiFePO₄ cells, comes in a standard 6U rack-mount enclosure with casters, and is equipped with a high-performance Battery Management System (BMS) for comprehensive battery monitoring and protection. It is suitable for residential and small commercial & industrial energy storage scenarios.
 
 ## Key Features
@@ -49,7 +48,7 @@ Refer to the model number on the product nameplate or panel: a model ending with
 | Weight | 120kg |
 
 :::note Full specifications
-For complete electrical parameters, see the [Product Specifications](installation-manual/index-new-en#Product-Specifications) chapter in the installation manual.
+For complete electrical parameters, see the Product Specifications chapter in the installation manual.
 :::
 
 ## Application Scenarios
@@ -58,10 +57,3 @@ For complete electrical parameters, see the [Product Specifications](installatio
 - Small commercial & industrial energy storage systems
 - Backup power (UPS) systems
 - Off-grid energy storage systems
-
-## Related Documents
-
-| Version | Documents |
-| :--- | :--- |
-| PCBMS Version | [Quick Installation Guide (PCBMS Version)](installation-manual/index-quick-en) · [Installation Manual (PCBMS Version)](installation-manual/index-new-en) |
-| JKBMS Version | Coming soon |

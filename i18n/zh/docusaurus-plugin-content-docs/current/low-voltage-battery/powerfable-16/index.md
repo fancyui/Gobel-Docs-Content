@@ -48,7 +48,7 @@ PowerFable 16 系列按所用 BMS 分为两个子版本，电气参数与安装�
 | 重量 | 120kg |
 
 :::note 完整规格
-完整电气参数请参见安装手册中的[产品规格](installation-manual/index-new#Product-Specifications)章节。
+完整电气参数请参见安装手册中的产品规格章节。
 :::
 
 ## 适用场景
@@ -57,10 +57,3 @@ PowerFable 16 系列按所用 BMS 分为两个子版本，电气参数与安装�
 - 小型工商业储能系统
 - 备用电源（UPS）系统
 - 离网储能系统
-
-## 相关文档
-
-| 版本 | 文档 |
-| :--- | :--- |
-| PCBMS 版 | [快速安装指南（PCBMS 版）](installation-manual/index-quick) · [安装手册（PCBMS 版）](installation-manual/index-new) |
-| JKBMS 版 | 敬请期待 |
