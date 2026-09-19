@@ -7,8 +7,6 @@ keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K
 
 # Gobel PowerFable 16 产品简介
 
-![Gobel PowerFable 16 储能电池](images/gp-sr1-16k-pc200b.jpg)
-
 PowerFable 16 是 Gobel Power 推出的 51.2V 314Ah（约 16kWh）磷酸铁锂（LiFePO₄）低压储能电池。它采用高性能 314Ah 磷酸铁锂电芯，标准 6U 机架式结构，底部带脚轮，并配备高性能电池管理系统（BMS），实现对电池的全面监控和保护，适用于家庭及小型工商业储能场景。
 
 ## 产品特点
