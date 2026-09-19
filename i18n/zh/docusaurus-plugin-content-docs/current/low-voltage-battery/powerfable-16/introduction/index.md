@@ -2,7 +2,7 @@
 sidebar_position: 1
 sidebar_label: 产品概览
 description: Gobel PowerFable 16 系列 51.2V 314Ah 磷酸铁锂低压储能电池产品简介
-keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K-JK200, PCBMS, JKBMS, 磷酸铁锂, 储能电池]
+keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K-JK200, GP-SR1-PC314, GP-SR1-JK314, PCBMS, JKBMS, 磷酸铁锂, 储能电池]
 ---
 
 # Gobel PowerFable 16 产品简介
@@ -29,11 +29,12 @@ PowerFable 16 系列按所用 BMS 分为两个子版本，电气参数与安装�
 | 项目 | PCBMS 版 | JKBMS 版 |
 | :--- | :--- | :--- |
 | 产品型号 | GP-SR1-16K-PC200B | GP-SR1-16K-JK200 |
+| 曾用型号 | GP-SR1-PC314 | GP-SR1-JK314 |
 | BMS 类型 | PCBMS | JKBMS |
 | 通讯协议设置 | 屏幕菜单 / PCBMS 上位机 / Gobel Console APP | 屏幕菜单 / JKBMS 上位机 / JKBMS APP |
 
 :::note 如何确认版本
-请以产品铭牌或面板上的型号为准：型号以 **PC200B** 结尾为 PCBMS 版，以 **JK200** 结尾为 JKBMS 版。
+请以产品铭牌或面板上的型号为准：型号以 **PC200B** 结尾为 PCBMS 版，以 **JK200** 结尾为 JKBMS 版。曾用型号 **GP-SR1-PC314** 对应现 PCBMS 版，**GP-SR1-JK314** 对应现 JKBMS 版。
 :::
 
 ## 规格概览

@@ -2,7 +2,7 @@
 sidebar_position: 1
 sidebar_label: Introduction
 description: Product introduction to the Gobel PowerFable 16 series 51.2V 314Ah LiFePO4 low-voltage energy storage battery
-keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K-JK200, PCBMS, JKBMS, LiFePO4, energy storage battery]
+keywords: [Gobel Power, PowerFable 16, GP-SR1-16K, GP-SR1-16K-PC200B, GP-SR1-16K-JK200, GP-SR1-PC314, GP-SR1-JK314, PCBMS, JKBMS, LiFePO4, energy storage battery]
 ---
 
 # Gobel PowerFable 16 Product Introduction
@@ -29,11 +29,12 @@ The PowerFable 16 series is divided into two sub-versions by BMS type. Both shar
 | Item | PCBMS Version | JKBMS Version |
 | :--- | :--- | :--- |
 | Product model | GP-SR1-16K-PC200B | GP-SR1-16K-JK200 |
+| Former model | GP-SR1-PC314 | GP-SR1-JK314 |
 | BMS type | PCBMS | JKBMS |
 | Communication protocol settings | Screen menu / PCBMS host software / Gobel Console APP | Screen menu / JKBMS host software / JKBMS APP |
 
 :::note How to identify the version
-Refer to the model number on the product nameplate or panel: a model ending with **PC200B** is the PCBMS Version, and a model ending with **JK200** is the JKBMS Version.
+Refer to the model number on the product nameplate or panel: a model ending with **PC200B** is the PCBMS Version, and a model ending with **JK200** is the JKBMS Version. The former models **GP-SR1-PC314** and **GP-SR1-JK314** correspond to the current PCBMS Version and JKBMS Version respectively.
 :::
 
 ## Specifications Overview
