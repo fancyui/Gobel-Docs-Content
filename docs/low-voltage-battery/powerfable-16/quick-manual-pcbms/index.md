@@ -6,16 +6,17 @@ description: Quick installation guide for the Gobel Power 51.2V 314Ah LiFePO4 lo
 keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, LiFePO4, energy storage battery, quick installation]
 ---
 
-# GP-SR1-16K-PC200B Quick Installation Guide (PCBMS Version)
+# Gobel PowerFable 16 Quick Installation Guide (PCBMS Version)
 
-This guide applies to the Gobel Power PowerFable 16 series **PCBMS version** (model GP-SR1-16K-PC200B). It is intended for experienced installers and lists only the key steps and points. For complete installation instructions, safety precautions, and troubleshooting, refer to the *GP-SR1-16K-PC200B Installation Manual (PCBMS Version)*. For the JKBMS version (GP-SR1-16K-JK200), use its corresponding documentation.
+This guide applies to the Gobel Power PowerFable 16 series **PCBMS version** (model GP-SR1-16K-PC200B). It is intended for experienced installers and lists only the key steps and points. For complete installation instructions, safety precautions, and troubleshooting, refer to the *Gobel PowerFable 16 Installation Manual (PCBMS Version)*. For the JKBMS version (Gobel PowerFable 16 JKBMS Version, model GP-SR1-16K-JK200), use its corresponding documentation.
 
 <a id="Quick-Specs"></a>
 ## 1. Key Specifications
 
 | Item | Parameter |
 | :--- | :--- |
-| Product model | Gobel PowerFable 16 (GP-SR1-16K-PC200B) PCBMS version |
+| Product name | Gobel PowerFable 16 (PCBMS Version) |
+| Model | GP-SR1-16K-PC200B |
 | Rated voltage / capacity | 51.2V / 314Ah (approx. 16kWh) |
 | Output terminals | One pair of positive terminals and one pair of negative terminals, M8 threaded holes, 200A max per terminal |
 | Connection method | Parallel connection only (up to 63 units); series connection is strictly prohibited |
@@ -26,7 +27,7 @@ This guide applies to the Gobel Power PowerFable 16 series **PCBMS version** (mo
 <a id="Quick-Interface"></a>
 ## 2. Key Panel Components
 
-![GP-SR1-16K-PC200B interface panel diagram](images/gp-sr1-16k-pc200b-interface-label.jpg)
+![Gobel PowerFable 16 interface panel diagram](images/gp-sr1-16k-pc200b-interface-label.jpg)
 
 | No. | Name | Function |
 | :---: | :--- | :--- |
@@ -155,7 +156,7 @@ For detailed troubleshooting, emergency handling, and communication pin definiti
 <a id="Quick-More"></a>
 ## 10. More Documents
 
-- *GP-SR1-16K-PC200B Installation Manual (PCBMS Version)* (full version)
+- *Gobel PowerFable 16 Installation Manual (PCBMS Version)* (full version)
 - *WiFi User Manual*, *PC Host Software Operation Guide*, *Gobel Console APP User Guide*, *Inverter Compatibility List* (see the "Reference Files" section of the installation manual)
 
 ## Contact

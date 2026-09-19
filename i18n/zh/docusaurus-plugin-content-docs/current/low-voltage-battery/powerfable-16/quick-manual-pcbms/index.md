@@ -6,16 +6,17 @@ description: Gobel Power 51.2V 314Ah 磷酸铁锂低压储能电池（PCBMS 版�
 keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, 储能电池, 快速安装]
 ---
 
-# GP-SR1-16K-PC200B 快速安装指南（PCBMS 版）
+# Gobel PowerFable 16 快速安装指南（PCBMS 版）
 
-本指南适用于 Gobel Power PowerFable 16 系列 **PCBMS 版本**（型号 GP-SR1-16K-PC200B），面向有经验的安装人员，仅列出关键步骤与要点。完整的安装说明、安全须知与故障处理请参见《GP-SR1-16K-PC200B 安装手册（PCBMS 版）》。JKBMS 版本（GP-SR1-16K-JK200）请使用其对应的文档。
+本指南适用于 Gobel Power PowerFable 16 系列 **PCBMS 版本**（型号 GP-SR1-16K-PC200B），面向有经验的安装人员，仅列出关键步骤与要点。完整的安装说明、安全须知与故障处理请参见《Gobel PowerFable 16 安装手册（PCBMS 版）》。JKBMS 版本（Gobel PowerFable 16 JKBMS 版，型号 GP-SR1-16K-JK200）请使用其对应的文档。
 
 <a id="Quick-Specs"></a>
 ## 1. 产品关键参数
 
 | 项目 | 参数 |
 | :--- | :--- |
-| 产品型号 | Gobel PowerFable 16（GP-SR1-16K-PC200B）PCBMS 版 |
+| 产品名称 | Gobel PowerFable 16（PCBMS 版） |
+| 产品型号 | GP-SR1-16K-PC200B |
 | 额定电压/容量 | 51.2V / 314Ah（约 16kWh） |
 | 输出端子 | 正极端子一对、负极端子一对，M8 螺孔，单个端子最大 200A |
 | 连接方式 | 仅支持并联（最多 63 台），严禁串联 |
@@ -26,7 +27,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Quick-Interface"></a>
 ## 2. 面板关键部件
 
-![GP-SR1-16K-PC200B 接口面板示意图](images/gp-sr1-16k-pc200b-interface-label.jpg)
+![Gobel PowerFable 16 接口面板示意图](images/gp-sr1-16k-pc200b-interface-label.jpg)
 
 | 编号 | 名称 | 用途 |
 | :---: | :--- | :--- |
@@ -155,7 +156,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Quick-More"></a>
 ## 10. 更多文档
 
-- 《GP-SR1-16K-PC200B 安装手册（PCBMS 版）》（完整版）
+- 《Gobel PowerFable 16 安装手册（PCBMS 版）》（完整版）
 - 《WiFi 使用说明书》《上位机操作流程文档》《Gobel Console APP 使用说明》《逆变器兼容列表》（见安装手册"参考文件"章节）
 
 ## 联系方式

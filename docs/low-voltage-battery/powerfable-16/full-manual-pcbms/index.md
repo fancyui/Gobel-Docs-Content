@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
-sidebar_label: Installation Manual (PCBMS)
+sidebar_label: Installation Manual (PCBMS Version)
 toc_min_heading_level: 2
 description: Installation manual for the Gobel Power 51.2V 314Ah LiFePO4 low-voltage energy storage battery (PCBMS Version)
 keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, LiFePO4, energy storage battery, manual]
 ---
 
-# GP-SR1-16K-PC200B Installation Manual (PCBMS Version)
+# Gobel PowerFable 16 Installation Manual (PCBMS Version)
 
-This manual applies to the Gobel Power PowerFable 16 series **PCBMS Version** (model GP-SR1-16K-PC200B). For the **JKBMS Version** (GP-SR1-16K-JK200), please use its corresponding installation manual.
+This manual applies to the Gobel Power PowerFable 16 series **PCBMS Version** (model GP-SR1-16K-PC200B). For the **JKBMS Version** (Gobel PowerFable 16 JKBMS Version, model GP-SR1-16K-JK200), please use its corresponding installation manual.
 
 <a id="Product-Introduction"></a>
 ## 1. Product Introduction
@@ -18,12 +18,12 @@ This product is the Gobel Power PowerFable 16 (model GP-SR1-16K-PC200B) 51.2V 31
 <a id="Product-Overview"></a>
 ### 1.1 Product Overview
 
-![GP-SR1-16K-PC200B energy storage battery](images/gp-sr1-16k-pc200b.jpg)
+![Gobel PowerFable 16 energy storage battery](images/gp-sr1-16k-pc200b.jpg)
 
 | Item | Specification |
 | :--- | :--- |
-| Product Name | Gobel PowerFable 16 |
-| Product Model | GP-SR1-16K-PC200B (PCBMS Version) |
+| Product Name | Gobel PowerFable 16 (PCBMS Version) |
+| Product Model | GP-SR1-16K-PC200B |
 | Brand | Gobel Power |
 | Product Type | 51.2V 314Ah LiFePO4 low-voltage energy storage battery |
 | Rated Voltage | 51.2V |
@@ -56,7 +56,7 @@ This product is the Gobel Power PowerFable 16 (model GP-SR1-16K-PC200B) 51.2V 31
 <a id="Product-Interface"></a>
 ### 1.4 Product Appearance and Interfaces
 
-![GP-SR1-16K-PC200B interface panel diagram](images/gp-sr1-16k-pc200b-interface-label.jpg)
+![Gobel PowerFable 16 interface panel diagram](images/gp-sr1-16k-pc200b-interface-label.jpg)
 
 The figure below illustrates the interfaces, indicators and operating components on the battery panel (the numbers in the figure correspond to the table below):
 
@@ -246,7 +246,7 @@ After unpacking, check the product and accessories against the table below to co
 
 | No. | Name | Specification/Qty | Image |
 | :---: | :---: | :---: | :---: |
-| <a id="Part01">01</a> | GP-SR1-16K-PC200B energy storage battery | 51.2V 314Ah, 1 unit | ![GP-SR1-16K-PC200B energy storage battery](images/gp-sr1-16k-pc200b.jpg) |
+| <a id="Part01">01</a> | Gobel PowerFable 16 energy storage battery | 51.2V 314Ah, 1 unit | ![Gobel PowerFable 16 energy storage battery](images/gp-sr1-16k-pc200b.jpg) |
 | <a id="Part02">02</a> | Positive power cable | 50mm², 1m, M8 terminals on both ends, 1 pc | ![Positive power cable](images/power-cable-p.png) |
 | <a id="Part03">03</a> | Negative power cable | 50mm², 1m, M8 terminals on both ends, 1 pc | ![Negative power cable](images/power-cable-n.png) |
 | <a id="Part04">04</a> | Communication network cable | RJ45 on both ends, symmetric wiring, 1 pc (can be used as a parallel cable or inverter communication cable) | ![Communication network cable](images/net-cable.png) |
@@ -631,8 +631,8 @@ Battery damage caused by failure to recharge in time is not covered by the warra
 
 | Item | Parameter |
 | :--- | :--- |
-| Product name | Gobel PowerFable 16 |
-| Product model | GP-SR1-16K-PC200B (PCBMS Version) |
+| Product name | Gobel PowerFable 16 (PCBMS Version) |
+| Product model | GP-SR1-16K-PC200B |
 | Brand | Gobel Power |
 | Product type | 51.2V 314Ah LiFePO4 low-voltage energy storage battery |
 | Rated voltage | 51.2V |
@@ -652,7 +652,7 @@ Battery damage caused by failure to recharge in time is not covered by the warra
 <a id="Product-Dimensions"></a>
 ### 9.1 Product Dimensions Diagram
 
-![GP-SR1-16K-PC200B product dimensions diagram](images/gp-sr1-16k-pc200b-dimension.jpg)
+![Gobel PowerFable 16 product dimensions diagram](images/gp-sr1-16k-pc200b-dimension.jpg)
 
 <a id="Appendix"></a>
 ## Appendix

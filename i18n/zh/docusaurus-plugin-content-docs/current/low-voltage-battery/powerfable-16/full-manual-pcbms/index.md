@@ -6,9 +6,9 @@ description: Gobel Power 51.2V 314Ah 磷酸铁锂低压储能电池（PCBMS 版�
 keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, 储能电池, 手册]
 ---
 
-# GP-SR1-16K-PC200B 安装手册（PCBMS 版）
+# Gobel PowerFable 16 安装手册（PCBMS 版）
 
-本手册适用于 Gobel Power PowerFable 16 系列 **PCBMS 版本**（型号 GP-SR1-16K-PC200B）。**JKBMS 版本**（GP-SR1-16K-JK200）请使用其对应的安装手册。
+本手册适用于 Gobel Power PowerFable 16 系列 **PCBMS 版本**（型号 GP-SR1-16K-PC200B）。**JKBMS 版本**（Gobel PowerFable 16 JKBMS 版，型号 GP-SR1-16K-JK200）请使用其对应的安装手册。
 
 <a id="Product-Introduction"></a>
 ## 1. 产品简介
@@ -18,12 +18,12 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Product-Overview"></a>
 ### 1.1 产品一览
 
-![GP-SR1-16K-PC200B 储能电池](images/gp-sr1-16k-pc200b.jpg)
+![Gobel PowerFable 16 储能电池](images/gp-sr1-16k-pc200b.jpg)
 
 | 项目 | 规格 |
 | :--- | :--- |
-| 产品名称 | Gobel PowerFable 16 |
-| 产品型号 | GP-SR1-16K-PC200B（PCBMS 版） |
+| 产品名称 | Gobel PowerFable 16（PCBMS 版） |
+| 产品型号 | GP-SR1-16K-PC200B |
 | 品牌 | Gobel Power |
 | 产品类型 | 51.2V 314Ah 磷酸铁锂低压储能电池 |
 | 额定电压 | 51.2V |
@@ -56,7 +56,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Product-Interface"></a>
 ### 1.4 产品外观与接口
 
-![GP-SR1-16K-PC200B 接口面板示意图](images/gp-sr1-16k-pc200b-interface-label.jpg)
+![Gobel PowerFable 16 接口面板示意图](images/gp-sr1-16k-pc200b-interface-label.jpg)
 
 下图为电池面板各接口、指示灯及操作部件的说明（图中数字编号对应下表）：
 
@@ -246,7 +246,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 | 编号 | 名称 | 规格/数量 | 图片 |
 | :---: | :---: | :---: | :---: |
-| <a id="Part01">01</a> | GP-SR1-16K-PC200B 储能电池 | 51.2V 314Ah，1台 | ![GP-SR1-16K-PC200B 储能电池](images/gp-sr1-16k-pc200b.jpg) |
+| <a id="Part01">01</a> | Gobel PowerFable 16 储能电池 | 51.2V 314Ah，1台 | ![Gobel PowerFable 16 储能电池](images/gp-sr1-16k-pc200b.jpg) |
 | <a id="Part02">02</a> | 正极动力线 | 50mm²，1m，两端 M8 端子，1根 | ![正极动力线](images/power-cable-p.png) |
 | <a id="Part03">03</a> | 负极动力线 | 50mm²，1m，两端 M8 端子，1根 | ![负极动力线](images/power-cable-n.png) |
 | <a id="Part04">04</a> | 通讯网线 | 两端 RJ45，对称线序，1根（可作并联线或逆变器通讯线） | ![通讯网线](images/net-cable.png) |
@@ -629,8 +629,8 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 | 项目 | 参数 |
 | :--- | :--- |
-| 产品名称 | Gobel PowerFable 16 |
-| 产品型号 | GP-SR1-16K-PC200B（PCBMS 版） |
+| 产品名称 | Gobel PowerFable 16（PCBMS 版） |
+| 产品型号 | GP-SR1-16K-PC200B |
 | 品牌 | Gobel Power |
 | 产品类型 | 51.2V 314Ah 磷酸铁锂低压储能电池 |
 | 额定电压 | 51.2V |
@@ -650,7 +650,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Product-Dimensions"></a>
 ### 9.1 产品尺寸图
 
-![GP-SR1-16K-PC200B 产品尺寸图](images/gp-sr1-16k-pc200b-dimension.jpg)
+![Gobel PowerFable 16 产品尺寸图](images/gp-sr1-16k-pc200b-dimension.jpg)
 
 <a id="Appendix"></a>
 ## 附录
