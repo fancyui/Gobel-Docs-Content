@@ -39,20 +39,44 @@ Refer to the model number on the product nameplate or panel: a model ending with
 
 ## Specifications Overview
 
-| Item | Specification |
-| :--- | :--- |
-| Brand name | Gobel PowerFable 16 |
-| Product type | 51.2V 314Ah LiFePO₄ low-voltage energy storage battery |
-| Rated voltage | 51.2V |
-| Rated capacity | 314Ah (approximately 16kWh) |
-| Ingress protection | IP21 |
-| Installation | Rack-mount / stacked (≤3 units) / floor-standing |
-| Dimensions | 482.6 × 241.3 × 773mm (W × H × D) |
-| Weight | 120kg |
+| Item | PCBMS Version | JKBMS Version |
+| :--- | :--- | :--- |
+| Product name | Gobel PowerFable 16 (PCBMS Version) | Gobel PowerFable 16 (JKBMS Version) |
+| Product model | GP-SR1-16K-PC200B | GP-SR1-16K-JK200 |
+| Brand | Gobel Power | Gobel Power |
+| Product type | 51.2V 314Ah LiFePO₄ low-voltage energy storage battery | 51.2V 314Ah LiFePO₄ low-voltage energy storage battery |
+| **Main parameters** | | |
+| Cell type | LiFePO₄ | LiFePO₄ |
+| Rated capacity | 314Ah [1] | 314Ah [1] |
+| Parallel expansion | Up to 63 units in parallel [2]; series connection strictly prohibited | Up to 16 units in parallel; series connection strictly prohibited |
+| Nominal voltage | 51.2V | 51.2V |
+| Operating voltage | 44.8V ~ 58.4V | 44.8V ~ 58.4V |
+| Nominal energy | Approximately 16kWh | Approximately 16kWh |
+| Usable energy | 16kWh [1] | 16kWh [1] |
+| Max. output power | 7.68kW | 7.68kW |
+| Charging current [3] | Max. continuous 150A; peak 200A (25 seconds) | Max. continuous 150A; peak 200A (25 seconds) |
+| Discharge current [3] | Max. continuous 150A; peak 200A (25 seconds) | Max. continuous 150A; peak 200A (25 seconds) |
+| Active balancing | Yes | Yes |
+| **Other parameters** | | |
+| Max. depth of discharge | 100% DOD | 100% DOD |
+| Dimensions (W × H × D) | 482.6 × 241.3 × 773mm | 482.6 × 241.3 × 773mm |
+| Weight | 120kg | 120kg |
+| Display | Screen (SOC, alarms, total voltage, current, inverter protocol) | Screen (SOC, alarms, total voltage, current, inverter protocol) |
+| Ingress protection | IP21 | IP21 |
+| Operating temperature | 0°C ~ 50°C | 0°C ~ 50°C |
+| Storage temperature | 0°C ~ 35°C | 0°C ~ 35°C |
+| Relative humidity | ≤95% RH (non-condensing) | ≤95% RH (non-condensing) |
+| Altitude | ≤3000m | ≤3000m |
+| Cycle life | ≥8000 cycles (25°C±2°C, 70% EOL) | ≥8000 cycles (25°C±2°C, 70% EOL) |
+| Electrical isolation protection | Built-in circuit breaker | Built-in circuit breaker |
+| Installation | Rack-mount / stacked (≤3 units) / floor-standing (optional wall fixing), with casters at the bottom | Rack-mount / stacked (≤3 units) / floor-standing (optional wall fixing), with casters at the bottom |
+| Communication interfaces | RS485A/CAN (inverter), RS485B/RS485C (parallel), RS232 (PC/mobile phone), WiFi (online monitoring), dry contact (DRY) | RS485A/CAN (inverter), RS485B/RS485C (parallel, PC), WiFi (online monitoring), dry contact (DRY) |
+| Energy throughput | 50MWh [4] | 50MWh [4] |
 
-:::note Full specifications
-For complete electrical parameters, see the Product Specifications chapter in the installation manual.
-:::
+[1] Test conditions: 25°C±2°C, beginning of life (BOL), 0.5C charge / 0.5C discharge, 100% DOD.
+[2] Battery modules automatically form a network after power-up, with no DIP switch settings required.
+[3] Current is affected by temperature and SOC.
+[4] Energy throughput refers to the total cumulative charge/discharge energy over the battery's entire service life.
 
 ## Application Scenarios
 
