@@ -157,7 +157,7 @@ For detailed troubleshooting, emergency handling, and communication pin definiti
 ## 10. More Documents
 
 - *Gobel PowerFable 16 Installation Manual (PCBMS Version)* (full version)
-- *WiFi User Manual*, *PC Host Software Operation Guide*, *Gobel Console APP User Guide*, *Inverter Compatibility List* (see the "Reference Files" section of the installation manual)
+- *WiFi User Manual*, *PCBMS Software User Guide*, *Gobel Console User Guide*, *Inverter Compatibility List* (see the "Reference Files" section of the installation manual)
 
 ## Contact
 

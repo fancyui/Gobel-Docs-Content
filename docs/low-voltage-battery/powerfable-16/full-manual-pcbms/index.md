@@ -498,7 +498,7 @@ When multiple batteries are connected in parallel, only the **host** battery's c
 2. **Set via PC host software**: Use the **RS232-USB communication cable ([05](#Part05))** to connect a Windows PC to the host battery, and select the communication protocol that matches the inverter in the host software on the PC.
 
    :::note
-   For detailed host software operation, refer to the "Host Software Operation Procedure" in the [Reference Documents](#Reference-Documents) section.
+   For detailed host software operation, refer to the "PCBMS Software User Guide" in the [Reference Documents](#Reference-Documents) section.
    :::
 
 3. **Set via mobile APP**: Use the **USB Type-C data cable ([06](#Part06))** to connect a mobile phone to the host battery, and select the communication protocol that matches the inverter in the Gobel Console APP.
@@ -583,7 +583,7 @@ This product supports multiple monitoring methods:
 3. **WiFi online monitoring**: After the battery's built-in [**WiFi interface**](#Product-Interface) connects to the network, it is compatible with the Gobel VRM online monitoring platform and supports integration with platforms such as Home Assistant and ioBroker for remote monitoring. For WiFi configuration, refer to the "WiFi User Manual".
 
 :::note
-For detailed host software operation, refer to the "Host Software Operation Procedure" in the [Reference Documents](#Reference-Documents) section.
+For detailed host software operation, refer to the "PCBMS Software User Guide" in the [Reference Documents](#Reference-Documents) section.
 :::
 
 <a id="Maintenance-Storage"></a>
@@ -629,28 +629,50 @@ Battery damage caused by failure to recharge in time is not covered by the warra
 <a id="Product-Specifications"></a>
 ## 9. Product Specifications
 
+<a id="Technical-Parameters"></a>
+### 9.1 Technical Parameters
+
 | Item | Parameter |
 | :--- | :--- |
 | Product name | Gobel PowerFable 16 (PCBMS Version) |
 | Product model | GP-SR1-16K-PC200B |
 | Brand | Gobel Power |
-| Product type | 51.2V 314Ah LiFePO4 low-voltage energy storage battery |
-| Rated voltage | 51.2V |
-| Rated capacity | 314Ah (approx. 16kWh) |
-| Normal terminal voltage range | 40V ~ 58V |
-| Output terminals | One pair of positive terminals and one pair of negative terminals, M8 threaded holes, 200A max per terminal |
-| Communication interfaces | RS485A/CAN (inverter), RS485B/RS485C (parallel), RS232 (PC/mobile phone), WiFi (online monitoring), dry contact (DRY) |
-| Connection mode | Parallel connection of multiple units only (up to 63 units); series connection strictly prohibited |
-| Installation | Rack mounting / stacking (≤3 layers) / floor mounting (optional wall fixing), with casters on the bottom |
-| Ingress protection rating | IP21 |
-| Operating ambient temperature | 0°C ~ 50°C |
-| Operating ambient humidity | ≤95% RH (non-condensing) |
-| Recommended installation altitude | ≤3000m |
+| Product type | 51.2V 314Ah LiFePO₄ low-voltage energy storage battery |
+| **Main parameters** | |
+| Cell type | LiFePO₄ (lithium iron phosphate) |
+| Rated capacity | 314Ah [1] |
+| Parallel expansion | Up to 63 units in parallel [2]; series connection strictly prohibited |
+| Nominal voltage | 51.2V |
+| Operating voltage | 44.8V ~ 58.4V |
+| Nominal energy | Approx. 16kWh |
+| Usable energy | 16kWh [1] |
+| Maximum output power | 7.68kW |
+| Charge current [3] | Max. continuous 150A; peak 200A (25 seconds) |
+| Discharge current [3] | Max. continuous 150A; peak 200A (25 seconds) |
+| Active balancing | Yes |
+| **Other parameters** | |
+| Maximum depth of discharge | 100% DOD |
 | Dimensions (W×H×D) | 482.6 × 241.3 × 773mm |
 | Weight | 120kg |
+| Display | Screen (SOC, alarm, total voltage, current, inverter protocol) |
+| Ingress protection rating | IP21 |
+| Operating temperature | 0°C ~ 50°C |
+| Storage temperature | 0°C ~ 35°C |
+| Relative humidity | ≤95% RH (non-condensing) |
+| Altitude | ≤3000m |
+| Cycle life | ≥8000 cycles (25°C±2°C, 70% EOL) |
+| Electrical isolation protection | Built-in circuit breaker |
+| Installation | Rack mounting / stacking (≤3 layers) / floor mounting (optional wall fixing), with casters on the bottom |
+| Communication interfaces | RS485A/CAN (inverter), RS485B/RS485C (parallel), RS232 (PC/mobile phone), WiFi (online monitoring), dry contact (DRY) |
+| Energy throughput | 50MWh [4] |
+
+[1] Test conditions: 25°C±2°C, beginning of life (BOL), 0.5C charge / 0.5C discharge, 100% DOD.
+[2] Battery modules automatically form a network after power-on; no DIP switches required.
+[3] Current is affected by temperature and SOC.
+[4] Energy throughput refers to the total cumulative charge and discharge energy over the battery's entire service life.
 
 <a id="Product-Dimensions"></a>
-### 9.1 Product Dimensions Diagram
+### 9.2 Product Dimensions Diagram
 
 ![Gobel PowerFable 16 product dimensions diagram](images/gp-sr1-16k-pc200b-dimension.jpg)
 
@@ -882,8 +904,8 @@ In addition to this manual, refer to the following companion documents as needed
 | Document Name | Description | Link |
 | :--- | :--- | :--- |
 | WiFi User Manual | Battery WiFi configuration and integration with online monitoring platforms such as Gobel VRM, Home Assistant, and ioBroker | WiFi User Manual link (reserved) |
-| Host Computer Software Operation Guide | Installation and detailed operating instructions for the PC host software | Detailed host computer software guide link (reserved) |
-| Gobel Console APP User Guide | Connection, one-touch configuration, and upgrade operations of the mobile APP | Gobel Console APP user guide link (reserved) |
+| PCBMS Software User Guide | Installation and detailed operating instructions for the PC host software | Detailed host computer software guide link (reserved) |
+| Gobel Console User Guide | Connection, one-touch configuration, and upgrade operations of the mobile APP | Gobel Console user guide link (reserved) |
 | Inverter Compatibility List | List of verified compatible inverter brands and models | Inverter compatibility list link (reserved) |
 
 <a id="Contact-Information"></a>

@@ -157,7 +157,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 ## 10. 更多文档
 
 - 《Gobel PowerFable 16 安装手册（PCBMS 版）》（完整版）
-- 《WiFi 使用说明书》《上位机操作流程文档》《Gobel Console APP 使用说明》《逆变器兼容列表》（见安装手册"参考文件"章节）
+- 《WiFi 使用说明书》《PCBMS软件使用说明》《Gobel Console使用说明》《逆变器兼容列表》（见安装手册"参考文件"章节）
 
 ## 联系方式
 

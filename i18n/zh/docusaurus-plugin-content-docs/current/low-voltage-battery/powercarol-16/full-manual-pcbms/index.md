@@ -1,37 +1,37 @@
 ---
 sidebar_position: 3
-sidebar_label: 安装手册 (PCBMS 版)
+sidebar_label: 安装手册
 toc_min_heading_level: 2
-description: Gobel Power 51.2V 314Ah 磷酸铁锂低压储能电池（PCBMS 版）安装手册
-keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, 储能电池, 手册]
+description: Gobel Power 51.2V 314Ah 磷酸铁锂低压储能电池安装手册
+keywords: [Gobel Power, GP-WP1-16K-PC200B, PowerCarol 16, 防水, IP65, 磷酸铁锂, 储能电池, 手册]
 ---
 
-# Gobel PowerFable 16 安装手册（PCBMS 版）
+# Gobel PowerCarol 16 安装手册
 
-本手册适用于 Gobel Power PowerFable 16 系列 **PCBMS 版本**（型号 GP-SR1-16K-PC200B）。**JKBMS 版本**（Gobel PowerFable 16 JKBMS 版，型号 GP-SR1-16K-JK200）请使用其对应的安装手册。
+本手册适用于 Gobel Power Carol 16 系列（型号 GP-WP1-16K-PC200B）。
 
 <a id="Product-Introduction"></a>
 ## 1. 产品简介
 
-本产品为 Gobel Power PowerFable 16（型号 GP-SR1-16K-PC200B）51.2V 314Ah 磷酸铁锂（LiFePO₄）低压储能电池，采用高性能 314Ah 磷酸铁锂电芯，标准 6U 机架式结构，底部带脚轮，并配备高性能电池管理系统（BMS），实现对电池的全面监控和保护。
+本产品为 Gobel Power Carol 16（型号 GP-WP1-16K-PC200B）51.2V 314Ah 磷酸铁锂（LiFePO₄）低压储能电池，采用高性能 314Ah 磷酸铁锂电芯，落地式结构，底部带脚轮、侧面带把手，防护等级 IP65，室内外均可安装，并配备高性能电池管理系统（BMS），实现对电池的全面监控和保护。
 
 <a id="Product-Overview"></a>
 ### 1.1 产品一览
 
-![Gobel PowerFable 16 储能电池](images/gp-sr1-16k-pc200b.jpg)
+![Gobel PowerCarol 16 储能电池](images/gp-wp1-16k-pc200b.jpg)
 
 | 项目 | 规格 |
 | :--- | :--- |
-| 产品名称 | Gobel PowerFable 16（PCBMS 版） |
-| 产品型号 | GP-SR1-16K-PC200B |
+| 产品名称 | Gobel PowerCarol 16 |
+| 产品型号 | GP-WP1-16K-PC200B |
 | 品牌 | Gobel Power |
 | 产品类型 | 51.2V 314Ah 磷酸铁锂低压储能电池 |
 | 额定电压 | 51.2V |
 | 额定容量 | 314Ah（约 16kWh） |
-| 防护等级 | IP21 |
-| 安装方式 | 机架安装 / 堆叠安装（≤3 层）/ 落地安装（可选固定墙体） |
-| 外形尺寸 | 482.6 × 241.3 × 773mm（宽 × 高 × 深，详见[产品尺寸图](#Product-Dimensions)） |
-| 重量 | 120kg |
+| 防护等级 | IP65 |
+| 安装方式 | 落地安装（带脚轮和把手） |
+| 外形尺寸 | 详见[产品尺寸图](#Product-Dimensions) |
+| 重量 | 125kg |
 
 <a id="Product-Features"></a>
 ### 1.2 产品特点
@@ -39,8 +39,9 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 - **高容量储能**：额定容量 314Ah（约 16kWh），满足家庭及小型工商业储能需求
 - **安全可靠**：磷酸铁锂电芯化学性质稳定，热稳定性优异
 - **智能 BMS 管理**：实时监控电池电压、电流、温度、SOC（剩余电量）等参数，提供过充、过放、过温、短路等多重保护
-- **灵活扩展**：最多支持 63 台电池并联，扩容方便；拨码开关支持自动地址分配（自动拨号），无需逐台手动拨码
-- **多种安装方式**：6U 标准机架式设计，带脚轮，支持机架安装、堆叠安装（最多 3 层）及落地安装
+- **灵活扩展**：最多支持 63 台电池并联，扩容方便；并联地址由系统自动分配（自动拨号），无需手动拨码
+- **室内外皆宜**：防护等级 IP65，落地式安装，室内外均可安装
+- **移动方便**：底部带脚轮、侧面带把手，单人即可短距离移动设备
 - **在线监控**：内置 WiFi 接口，兼容 Gobel VRM 在线监控平台，并支持接入 Home Assistant、ioBroker 等平台
 - **手机 APP 管理**：可使用 Gobel Console APP 对电池进行一键配置和升级
 - **标准接口**：提供 RS485A/CAN（逆变器）、RS232（电脑/手机）、RS485B/RS485C（并联）等多种通讯接口，适配主流逆变器
@@ -52,30 +53,29 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 - 小型工商业储能系统
 - 备用电源（UPS）系统
 - 离网储能系统
+- 室外储能系统（IP65 防护）
 
 <a id="Product-Interface"></a>
 ### 1.4 产品外观与接口
 
-![Gobel PowerFable 16 接口面板示意图](images/gp-sr1-16k-pc200b-interface-label.jpg)
+![Gobel PowerCarol 16 接口面板示意图](images/gp-wp1-16k-pc200b-interface-label.jpg)
 
 下图为电池面板各接口、指示灯及操作部件的说明（图中数字编号对应下表）：
 
 | 编号 | 名称 | 说明 |
 | :---: | :---: | :--- |
-| 1 | 正极端子 | M8 螺孔，一对，单个端子最大承载电流 200A |
-| 2 | 负极端子 | M8 螺孔，一对，单个端子最大承载电流 200A |
-| 3 | 接地端子 | 电池系统接地连接 |
-| 4 | WiFi 接口 | 无线通讯接口，连接 Gobel VRM 在线监控平台、Home Assistant、ioBroker 等 |
-| 5 | 干接点（DRY） | 干接点输出接口 |
-| 6 | 显示屏及按键 | 显示电池状态信息，并可在屏幕中设置通讯协议等参数 |
-| 7 | ON/OFF 开关 | 开启或关闭电池 BMS |
-| 8 | 断路器 | 电池主回路通断控制 |
-| 9 | 复位按钮（RST） | 长按可复位 BMS 状态 |
-| 10 | 拨码开关（ADS） | 用于设置电池并联地址，支持自动地址分配 |
-| 11 | 指示灯 | 包含 RUN（运行）、ALM（告警）、ON/OFF（开关）、SOC（剩余电量）指示灯 |
-| 12 | RS485A/CAN 端口 | 逆变器通讯接口 |
-| 13 | RS232 端口 | 连接电脑或手机，用于上位机监控和参数设置 |
-| 14 | RS485B/RS485C 端口 | 电池并联通讯接口 |
+| 1 | RS485A/CAN 端口 | 逆变器通讯接口 |
+| 2 | RS232 端口 | 连接电脑或手机，用于上位机监控和参数设置 |
+| 3 | WiFi 接口 | 无线通讯接口，连接 Gobel VRM 在线监控平台、Home Assistant、ioBroker 等 |
+| 4 | RS485B 端口 | 电池并联通讯接口 |
+| 5 | RS485C 端口 | 电池并联通讯接口 |
+| 6 | ON/OFF 开关 | 开启或关闭电池 BMS |
+| 7 | 排气阀 | 内部压力异常时自动泄压，请勿遮挡 |
+| 8 | 把手 | 用于移动和搬运电池 |
+| 9 | LED 灯条 | 指示 SOC（剩余电量）、Run（运行）及 Alarm（告警）状态 |
+| 10 | 正极端子 | 正极储能快插接线端子，最大承载电流 200A |
+| 11 | 负极端子 | 负极储能快插接线端子，最大承载电流 200A |
+| 12 | 断路器 | 电池主回路通断控制 |
 
 各通讯接口的引脚定义详见[附录](#Appendix)中的[产品通信引脚定义](#Communication-Pin-Definitions)章节。
 
@@ -130,7 +130,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 :::
 
 :::caution 搬运安全
-本产品重量达 120kg，禁止强行单人搬运，搬运和移动时需使用合适的搬运工具并由多人协作完成。产品上重下轻，禁止侧放和倒置，移动时防止设备倾倒造成人身伤害。搬运方法详见[运输与搬运](#Transportation-Handling)章节。
+本产品重量达 125kg，禁止强行单人搬运，搬运和移动时需使用合适的搬运工具并由多人协作完成。产品上重下轻，禁止侧放和倒置，移动时防止设备倾倒造成人身伤害。搬运方法详见[运输与搬运](#Transportation-Handling)章节。
 :::
 
 <a id="Transportation-Handling"></a>
@@ -152,11 +152,10 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Handling-Manual"></a>
 #### 3.2.1 人工搬运
 
-- 产品重达 120kg，禁止强行单人搬运；搬运前确认人员身体状况良好，佩戴防滑手套、安全鞋等防护装备，注意尖锐金属面板和重物
+- 产品重达 125kg，禁止强行单人搬运；搬运前确认人员身体状况良好，佩戴防滑手套、安全鞋等防护装备，注意尖锐金属面板和重物
 - 搬运前清理搬运路径并确认地面安全；经过坡道、狭窄空间和楼梯时应减速慢行，并安排专人协助
 - 产品上重下轻，禁止侧放、倒置和无固定搬运，移动过程中应采取措施防止倾倒
-- 仅可通过产品指定的把手或底部边缘推行或抬起，不得抓握安装在设备内部的部件
-- 短距离平地移动可利用底部[**脚轮**](#Product-Interface)由多人配合推行，移动到位后锁紧脚轮
+- 短距离平地移动可利用侧面[**把手**](#Product-Interface)配合底部[**脚轮**](#Product-Interface)推行，移动到位后锁紧脚轮
 - 搬运时贴近设备、屈膝平稳发力，用腿部而非腰部力量起升，不要猛拉或扭转身体；转弯时移动脚步而非扭转腰部
 - 平稳匀速移动设备并轻抬轻放，防止碰撞、跌落、刮擦或损坏部件和线缆
 - 搬运完成后确认设备放置稳固，防止倾倒伤人
@@ -165,7 +164,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 #### 3.2.2 使用搬运设备
 
 - 使用叉车等搬运设备时，须由持证专业人员操作，遵守设备操作要求；无关人员应远离作业区至少 2m，禁止站在或骑坐在叉车或货物上，禁止超载
-- 搬运设备的额定载重应大于产品重量的两倍（本产品重 120kg，即大于 240kg），叉臂长度应不小于产品深度
+- 搬运设备的额定载重应大于产品重量的两倍（本产品重 125kg，即大于 250kg），叉臂长度应不小于产品深度
 - 控制行驶速度，禁止急转弯；倒车前确认后方安全，狭窄空间内应安排专人指挥
 - 禁止在坡度 ≥5° 的坡道上作业；路面不平时应减速慢行
 - 搬运过程中禁止倾斜或倒置产品；若不可避免发生倾斜，应尽快恢复直立并静置 2 小时后方可通电
@@ -179,11 +178,11 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Site-Requirements"></a>
 #### 4.1.1 安装环境要求
 
-- **地面/机架**：安装地面应平整、坚固，具备足够的承重能力（产品重 120kg）；使用机架安装时，机架须足够牢固，能可靠承重所装电池的总重量
+- **地面**：安装地面应平整、坚固，具备足够的承重能力（产品重 125kg）
 - **通风**：安装场所应通风良好，避免热量积聚；不要遮挡设备通风口或散热结构，远离设备出风口
 - **环境条件**：干燥、清洁，无腐蚀性气体或粉尘；环境温度 0°C ~ 50°C，相对湿度不超过 95% RH（无凝露）；建议安装海拔不超过 3000m
-- **安全距离**：远离易燃易爆物品及水源；远离热源、明火及高温物体，不得在存在易燃易爆气体或烟雾的环境中安装或运行，设备周围不得存放易燃易爆材料
-- **防水防雨**：本产品防护等级为 IP21，不防水，不得安装在室外露天位置，严禁雨淋、水溅或积雪覆盖；不得安装在可能被水淹没的位置，远离液体以及易发生冷凝或渗水的区域
+- **安全距离**：远离易燃易爆物品；远离热源、明火及高温物体，不得在存在易燃易爆气体或烟雾的环境中安装或运行，设备周围不得存放易燃易爆材料
+- **防水防雨**：本产品防护等级为 IP65，室内外均可安装；但仍不得安装在可能被水淹没的位置，应远离易发生积水、冷凝或渗水的区域，避免长时间浸泡
 - **腐蚀环境**：避免磁性粉尘、挥发性或腐蚀性气体、有机溶剂、导电金属粉尘及盐雾环境
 - **电磁与振动**：避免强烈振动、噪声和电磁干扰的场所
 - **其他**：不得将设备安装在船舶、火车、汽车等移动载体上；安装位置应远离儿童及日常生活、工作区域
@@ -192,48 +191,36 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 - 电池两侧与墙壁距离 ≥ 100mm
 - 电池顶部与上方障碍物距离 ≥ 300mm
-- 电池前方应预留至少 800mm 的操作空间
+- 电池前方（接口面板一侧）应预留至少 800mm 的操作空间
 
 :::caution
-安装及通电前请清除安装区域内的粉尘和铁屑；安装前确认场地（或机架）具备足够的承重能力并做好防静电措施；不得将设备安装在封闭、通风不良且无消防设施，或消防人员无法进入的场所。
+安装及通电前请清除安装区域内的粉尘和铁屑；安装前确认场地具备足够的承重能力并做好防静电措施；不得将设备安装在封闭、通风不良且无消防设施，或消防人员无法进入的场所。
 :::
 
 <a id="Tool-Requirements"></a>
-#### 4.1.2 工具与扭矩要求
+#### 4.1.2 工具要求
 
 安装前请准备以下工具和仪表：
 
 | 工具/仪表 | 用途 | 图片 |
 | :--- | :--- | :---: |
-| 套筒扳手/扭力扳手 | 紧固 M8 正负极动力端子 | ![套筒扳手](images/socket-wrench.png) ![T型套筒扳手](images/t-socket%20wrench.png) |
-| 活动扳手 | 紧固膨胀螺栓螺母 | ![活动扳手](images/combination-wrench.png) |
-| 十字螺丝刀 | 安装左右耳、墙体固定支架 | ![十字螺丝刀](images/phillips-screwdriver.png) |
+| 套筒扳手 | 紧固逆变器侧动力端子（按逆变器要求） | ![套筒扳手](images/socket-wrench.png) |
+| 活动扳手 | 紧固逆变器侧端子螺母 | ![活动扳手](images/combination-wrench.png) |
+| 十字螺丝刀 | 紧固逆变器侧接线螺丝等 | ![十字螺丝刀](images/phillips-screwdriver.png) |
 | 万用表 | 测量端子电压 | ![万用表](images/multimeter.png) |
-| 电钻 | 落地安装时在墙体钻孔 | ![电钻](images/drill.png) |
-| 锤子 | 将膨胀螺栓敲入墙体 | ![锤子](images/hammer.png) |
-| 卷尺 | 测量安装孔位距离 | ![卷尺](images/tape-measure.png) |
-| 记号笔 | 标记钻孔位置 | ![记号笔](images/marker-pen.png) |
-| 水平尺 | 确认设备安装水平 | ![水平尺](images/spirit-level.png) |
-| 网线压线钳 | 自制逆变器通讯/并联网线（如引脚定义不匹配） | ![网线压线钳](images/Crimping-tool-rj45.png) |
-| 压线钳 | 自制动力线缆（如需） | ![压线钳](images/Crimping-tool.png) |
+| 压线钳 | 自制动力线缆，压接储能快插接线端子 | ![压线钳](images/Crimping-tool.png) |
+| 网线压线钳 | 室外安装时重新压接水晶头 | ![网线压线钳](images/Crimping-tool-rj45.png) |
+| 卷尺 | 测量线缆长度及安装距离 | ![卷尺](images/tape-measure.png) |
+| 记号笔 | 标记测量位置 | ![记号笔](images/marker-pen.png) |
+| 水平尺 | 确认设备安放水平 | ![水平尺](images/spirit-level.png) |
 | 绝缘手套 | 操作防护 | ![绝缘手套](images/insulated-gloves.png) |
 | 绝缘鞋 | 操作防护 | ![绝缘鞋](images/insulated-boots.png) |
-| 护目镜 | 钻孔等作业防护（推荐配备） | ![护目镜](images/safety-glasses.png) |
+| 护目镜 | 作业防护（推荐配备） | ![护目镜](images/safety-glasses.png) |
 | Windows 系统电脑 | 用于上位机协议设置 | — |
 | 智能手机 | 用于 Gobel Console APP 配置 | — |
 
-进行电气连接时，请按照下表规定的扭矩值拧紧螺丝：
-
-| 螺丝规格 | 扭矩要求 |
-| :------: | :------: |
-| M6 | 8N·m |
-| M8 | 15N·m |
-| M10 | 15 ~ 20N·m |
-
-:::note 扭矩说明
-- 本产品正负极动力端子为 M8 规格，请按 15N·m 扭矩拧紧。
-- 表中扭矩值适用于常规装配条件下的标准螺丝；高振动或恶劣环境等特殊工况下请酌情调整。
-- 请使用经过校准的扭力扳手，避免螺丝过紧或过松。
+:::note
+自制动力线缆（压接储能快插接线端子）的完整操作步骤见[制作动力线缆](#Power-Cable-Assembly)。
 :::
 
 <a id="Pre-Installation-Check"></a>
@@ -246,15 +233,13 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 | 编号 | 名称 | 规格/数量 | 图片 |
 | :---: | :---: | :---: | :---: |
-| <a id="Part01">01</a> | Gobel PowerFable 16 储能电池 | 51.2V 314Ah，1台 | ![Gobel PowerFable 16 储能电池](images/gp-sr1-16k-pc200b.jpg) |
-| <a id="Part02">02</a> | 正极动力线 | 50mm²，1m，两端 M8 端子，1根 | ![正极动力线](images/power-cable-p.png) |
-| <a id="Part03">03</a> | 负极动力线 | 50mm²，1m，两端 M8 端子，1根 | ![负极动力线](images/power-cable-n.png) |
-| <a id="Part04">04</a> | 通讯网线 | 两端 RJ45，对称线序，1根（可作并联线或逆变器通讯线） | ![通讯网线](images/net-cable.png) |
-| <a id="Part05">05</a> | RS232-USB 通讯线 | 1根（连接电脑上位机） | ![RS232-USB 通讯线](images/usb-console-cable.png) |
-| <a id="Part06">06</a> | USB-Type C 数据线 | 1根（连接手机） | ![USB-Type C 数据线](images/usb-to-type-c-cable.png) |
-| <a id="Part07">07</a> | 机架固定耳（左右耳） | 左耳、右耳各 1 个（机架固定及墙体固定用） | ![机架固定耳（左右耳）](images/rack-ears.jpg) |
-| <a id="Part08">08</a> | 墙体固定支架 | 2个（落地安装固定墙体用） | ![墙体固定支架](images/wall-fixing-bracket.jpg) |
-| <a id="Part09">09</a> | 膨胀螺栓 | 2个 | ![膨胀螺栓](images/expansion-bolt.png) |
+| <a id="Part01">01</a> | Gobel PowerCarol 16 储能电池 | 51.2V 314Ah，1台 | ![Gobel PowerCarol 16 储能电池](images/gp-wp1-16k-pc200b.jpg) |
+| <a id="Part02">02</a> | 正/负极储能快插接线端子（cable side power connector） | 200A，正负极各 1 个（需自行压接线缆） | ![储能快插接线端子](images/cable-side-power%20connector.png) |
+| <a id="Part03">03</a> | 通讯网线 | 两端 RJ45，对称线序，1根（可作并联线或逆变器通讯线） | ![通讯网线](images/net-cable.png) |
+| <a id="Part04">04</a> | RS232-USB 通讯线 | 1根（连接电脑上位机） | ![RS232-USB 通讯线](images/usb-console-cable.png) |
+| <a id="Part05">05</a> | USB-Type C 数据线 | 1根（连接手机） | ![USB-Type C 数据线](images/usb-to-type-c-cable.png) |
+| <a id="Part06">06</a> | RJ45 防水格兰头（RJ45 Cable Waterproof Gland） | 2个（室外安装防水用） | ![RJ45 防水格兰头](images/rj45-cable-gland-2.png) |
+| <a id="Part07">07</a> | 水晶头（RJ45 插头） | 4个（室外安装重新压接用） | ![水晶头](images/rj45-plug.jpg) |
 
 <a id="Unpacking-Inspection"></a>
 #### 4.2.2 开箱检查步骤
@@ -265,7 +250,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 2. 对照[部件清单](#Parts-List)检查产品及配件是否有缺失或损坏。
 
-3. 按面板上的 [**ON/OFF 开关**](#Product-Interface)开机，观察[**显示屏**](#Product-Interface)及[**指示灯**](#Product-Interface)显示是否正常。
+3. 按面板上的 [**ON/OFF 开关**](#Product-Interface)开机，观察 [**LED 灯条**](#Product-Interface)显示是否正常。
 
 4. 将[**断路器**](#Product-Interface)拨到 ON 位置，使用万用表测量电池[**正极端子**](#Product-Interface)和[**负极端子**](#Product-Interface)的电压，正常电压应在 40V ~ 58V 之间。
 
@@ -285,63 +270,22 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Installation-Procedures"></a>
 ### 4.3 安装步骤
 
-本产品为 6U 标准机架式结构，底部带脚轮，支持三种安装方式：**机架安装**、**堆叠安装**和**落地安装**（可选固定到墙体）。请根据实际场地选择其中一种方式。
+本产品为落地式结构，底部带脚轮、侧面带把手，移动方便。安装步骤如下：
 
 1. 将储能电池（[01](#Part01)）的[**断路器**](#Product-Interface)关闭，并按[**ON/OFF 开关**](#Product-Interface)关机。
 
-2. 根据现场条件选择下述一种安装方式进行安装。
+2. 利用侧面[**把手**](#Product-Interface)配合底部[**脚轮**](#Product-Interface)将电池移动到预先确定的安装位置（建议两人配合，防止倾倒），移动到位后锁紧脚轮。
 
-<a id="Rack-Installation"></a>
-#### 4.3.1 机架安装
-
-1. 将**机架固定耳左右耳（[07](#Part07)）** 使用螺丝安装到电池两侧的安装孔上，注意区分左耳和右耳的方向。
-
-   ![安装机架固定耳（左右耳）](images/rack-ears.jpg)
-
-2. 由多人配合（或使用搬运设备）将电池推入标准 19 英寸机架的预定层位。
-
-3. 使用螺丝穿过左右耳的安装孔，将电池牢固地固定到机架前后立柱上。
-
-:::caution 机架承重要求
-安装电池的机架必须足够牢固，能可靠承重电池的重量（单台电池重 120kg）。多台电池安装在同一机架内时，请按机架内电池的总重量核算机架及楼板的承重能力，并确保机架本身稳定不晃动。
-:::
-
-<a id="Stack-Installation"></a>
-#### 4.3.2 堆叠安装
-
-1. 将底层电池放置在平整、坚固的水平地面上。
-
-2. 将其余电池逐台堆叠放置在底层电池顶部，堆叠时注意上下对齐、平稳放置。
-
-:::caution 堆叠层数限制
-堆叠安装时最大堆叠层数不得超过 3 层。堆叠完成后请确认各层电池稳固无晃动，必要时参考[落地安装](#Floor-Installation)章节将设备固定到墙体，防止倾倒。
-:::
-
-<a id="Floor-Installation"></a>
-#### 4.3.3 落地安装
-
-1. 利用底部[**脚轮**](#Product-Interface)将电池移动到预先确定的安装位置，锁紧脚轮防止移动。
-
-2. （可选）将电池固定到墙体，按以下步骤操作：
-
-   1. 安装**机架固定耳左右耳（[07](#Part07)）** 到电池两侧。
-
-   2. 将**墙体固定支架（[08](#Part08)）** 安装到左右耳上。
-
-      ![墙体固定支架安装示意图](images/wall-fixing-diagram.jpg)
-
-   3. 用记号笔通过墙体固定支架上的孔位在墙面上标记，用电钻在墙体标记处钻孔，将**膨胀螺栓（[09](#Part09)）** 插入钻好的孔中，最后用扳手拧紧螺母，将支架固定到墙体上。
-
-      ![电池固定到墙体示意图](images/wall-fixing-bracket.jpg)
+3. 使用水平尺确认设备安放水平；如地面不平，请调整设备位置或垫平，确保设备稳固不晃动。
 
 :::caution
-移动电池时注意地面平整度，避免倾斜角度过大。电池重达 120kg，移动时务必注意安全，防止倾倒伤人。墙体钻孔前请确认墙内无水电管线，钻孔时防止粉尘进入电池，钻孔后清理现场碎屑。
+移动电池时注意地面平整度，避免倾斜角度过大。电池重达 125kg，移动时务必注意安全，防止倾倒伤人。接口面板一侧应朝向便于接线和维护的方向。
 :::
 
 :::caution 安装纪律
 - 安装必须严格按照本说明书和设计要求进行，禁止擅自更改安装步骤或技术参数
 - 安装及接线过程中所有开关保持 OFF 位置，严禁带电作业
-- 所有螺丝和固定件均需牢固拧紧；钻孔时防止粉尘进入电池，注意避开墙内或地下的管线，钻孔后清理现场碎屑
+- 所有紧固件均需牢固可靠
 :::
 
 <a id="Post-Installation-Inspection"></a>
@@ -350,7 +294,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 安装完成后，确认以下各项正常：
 
 - 电池外观完好，无变形、磕碰或划伤
-- 设备放置稳固：机架安装的左右耳螺丝已拧紧；堆叠安装的各层已对齐稳固；落地安装的脚轮已锁紧（如固定墙体，墙体固定支架已牢固）
+- 设备放置稳固，脚轮已锁紧
 - 周围通道畅通，无易燃易爆物品
 - 警示标识和参数铭牌完整、清晰
 - 现场消防设备就位且符合要求
@@ -381,18 +325,59 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 连接前请确认以下线缆和部件准备就绪：
 
-- **正极动力线（[02](#Part02)）**：50mm²，1m，两端 M8 端子
-- **负极动力线（[03](#Part03)）**：50mm²，1m，两端 M8 端子
-- **通讯网线（[04](#Part04)）**：两端 RJ45、对称线序，可作并联通讯线或逆变器通讯线
-- **RS232-USB 通讯线（[05](#Part05)）**：用于连接 Windows 系统电脑，进行上位机监控和协议设置
-- **USB-Type C 数据线（[06](#Part06)）**：用于连接手机，使用 Gobel Console APP 进行配置
+- **正/负极储能快插接线端子（[02](#Part02)）**：200A，正负极各 1 个，需自行压接线缆
+- **通讯网线（[03](#Part03)）**：两端 RJ45、对称线序，可作并联通讯线或逆变器通讯线
+- **RS232-USB 通讯线（[04](#Part04)）**：用于连接 Windows 系统电脑，进行上位机监控和协议设置
+- **USB-Type C 数据线（[05](#Part05)）**：用于连接手机，使用 Gobel Console APP 进行配置
+- **RJ45 防水格兰头（[06](#Part06)）及水晶头（[07](#Part07)）**：室外安装时用于制作防水通讯线缆
 
 同时请确认逆变器等其他设备已安装到位，并将逆变器关机断电；请同时查阅逆变器手册中与电池连接相关的部分。
 
-<a id="Battery-Preparation"></a>
-#### 5.2.2 电池拨码开关设置
+<a id="Power-Cable-Assembly"></a>
+#### 5.2.2 制作动力线缆
 
-如果只有一台电池，则其为主机，将[**拨码开关**](#Product-Interface)拨为 ON、OFF、OFF、OFF、OFF、OFF；如果有多台电池并联，则选其中一台作为主机，其他电池作为从机，各地址的拨码开关设置请参考[附录](#Appendix)中的[拨码开关设置表](#DIP-Switch-Settings)。本产品也可将所有电池的拨码开关全部拨为 OFF，由系统自动分配地址（自动拨号），无需手动逐台拨码。
+动力线缆需自行制作，请自配合适长度的 50mm² 动力线缆，并按以下步骤将线缆压接到正/负极储能快插接线端子（[02](#Part02)）：
+
+1. 拧下正/负极储能快插接线端子的尾盖（电缆护套夹紧螺母），将 50mm² 线缆一端穿过尾盖。
+2. 按端子压接铜环的压接长度要求剥除线缆端部绝缘层（注意勿损伤铜芯），将剥出的铜芯全部插入端子压接铜环底部。
+3. 使用与 50mm² 线缆匹配的压线钳及对应压模，在压接铜环的规定压接位置施压压接，压接后目视检查压接部位并轻拉线缆，确认压接牢固、导通良好。
+4. 将尾盖重新拧回端子并拧紧，使尾盖可靠夹紧线缆护套，防止线缆被拉拽时受力传导至压接部位。
+
+   ![储能快插接线端子压接示意图](images/cable-side-power%20connector-inner.jpg)
+
+5. 线缆另一端根据实际连接对象压接对应端子：直接连接逆变器时，按逆变器输入端子规格压接（如 M8 OT 端子）；多台电池经汇流排并联时，按汇流排连接方式压接（如 M8/M10 OT 端子），并按逆变器或汇流排手册要求的扭矩紧固。
+
+:::danger
+压接不良会导致端子接触电阻增大、异常发热甚至烧毁。压接作业请由具备相应资质的人员使用合格工具完成；压接后务必逐项检查确认牢固后方可投入使用的连接。
+:::
+
+<a id="Waterproof-Cable-Assembly"></a>
+#### 5.2.3 制作防水通讯线缆
+
+室外安装时，通讯线缆连接电池的一端（并联线为两端）需使用附件中的 RJ45 防水格兰头（[06](#Part06)）和水晶头（[07](#Part07)）做防水处理。按线缆用途分为两种情况：
+
+- **逆变器通讯线（电池 → 逆变器）**：使用 1 个格兰头，装配在连接电池的一端；另一端根据逆变器的要求处理。
+
+- **并联通讯线（电池 → 电池）**：使用 2 个格兰头，两端各装配 1 个。
+
+格兰头的装配步骤如下：
+
+1. 拧下 RJ45 防水格兰头首尾两端的盖（首端防水盖和尾端锁紧盖），将拆下的尾盖套入网线；
+2. 剪去水晶头后的网线穿过尾盖并插入格兰头本体；
+3. 重新压接上水晶头（[07](#Part07)）；
+4. 将首端防水盖重新拧回格兰头首端并拧紧；
+5. 将格兰头首端对准面板上的防水端子插入，拧紧尾盖使格兰头锁紧固定并夹紧网线护套，实现防水密封。
+
+![RJ45 防水格兰头连接步骤图](images/rj45-cable-gland-connection-step.png)
+
+:::note
+制作并联通讯线时，另一端无需剪线：将第二个格兰头的尾盖和本体从剪掉水晶头的一端套入网线，推至保留原水晶头的一端，使原水晶头从格兰头首端穿出，拧紧该格兰头的尾盖即可。
+:::
+
+<a id="Battery-Preparation"></a>
+#### 5.2.4 电池地址说明
+
+本产品无需手动拨码，并联地址由系统自动分配（自动拨号）。多台电池并联时，系统会自动指定主机与从机；逆变器通讯协议只需在主机上设置，详见[逆变器通讯协议设置](#Protocol-Settings)章节。
 
 <a id="Cable-Connection"></a>
 ### 5.3 线缆连接
@@ -400,16 +385,16 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Grounding-Connection"></a>
 #### 5.3.1 接地连接
 
-- 用接地线将电池[**接地端子**](#Product-Interface)可靠接地，接地电阻应小于 1Ω，接地连接方式请遵循当地电气规范及逆变器的要求
+- 请按照当地电气规范及逆变器的要求，完成电池系统的接地连接
 - 确保系统所在场合已安装过压保护装置
 
 <a id="Power-Cable-Connection"></a>
 #### 5.3.2 电力线缆连接
 
-将**正极动力线（[02](#Part02)）** 一端连接至电池**正极端子**（M8，一对中的任一空余端子），另一端连接至逆变器电池输入正极；将**负极动力线（[03](#Part03)）** 一端连接至电池**负极端子**（M8，一对中的任一空余端子），另一端连接至逆变器电池输入负极。端子螺丝请按[工具与扭矩要求](#Tool-Requirements)中的规定扭矩拧紧（M8 为 15N·m）。
+将自制动力线的正极储能快插接线端子（[02](#Part02)）插入电池[**正极端子**](#Product-Interface)并锁紧到位，另一端连接至逆变器电池输入正极；将负极储能快插接线端子插入电池[**负极端子**](#Product-Interface)并锁紧到位，另一端连接至逆变器电池输入负极。
 
 :::caution
-连接时务必确认正负极对应正确，反接会导致设备严重损坏。每个端子最大承载电流为 200A，请根据系统实际电流确认端子和线缆的载流能力是否满足要求。
+连接时务必确认正负极对应正确，反接会导致设备严重损坏。每个端子最大承载电流为 200A，请根据系统实际电流确认端子和线缆的载流能力是否满足要求。插入端子时请确保锁紧到位，连接后轻拉线缆确认无松动。
 :::
 
 :::note 线缆敷设
@@ -419,7 +404,13 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Communication-Cable-Connection"></a>
 #### 5.3.3 通讯线缆连接
 
-将**通讯网线（[04](#Part04)）** 一端接到主机电池的 [**RS485A/CAN 端口**](#Product-Interface)上，另一端接到逆变器的 BMS 通信接口（具体使用 RS485 还是 CAN 协议，需查看逆变器手册并与电池的协议设置保持一致）。多台电池并联时的通讯接线方式详见[多台电池并联连接](#Multi-Pack-Parallel-Connection)章节。
+将**通讯网线（[03](#Part03)）** 一端接到主机电池的 [**RS485A/CAN 端口**](#Product-Interface)上，另一端接到逆变器的 BMS 通信接口（具体使用 RS485 还是 CAN 协议，需查看逆变器手册并与电池的协议设置保持一致）。根据安装环境的不同，通讯线缆的接线方式如下：
+
+- **室内安装**：可不使用 RJ45 防水格兰头，直接将网线水晶头插入 RS485A/CAN、RS485B、RS485C 或 RS232 通讯端口。
+
+- **室外安装**：需使用附件中的 RJ45 防水格兰头（[06](#Part06)）制作防水通讯线缆，制作步骤见[制作防水通讯线缆](#Waterproof-Cable-Assembly)。
+
+  RS232 端口由于用于连接上位机、不会一直连接，可不使用 RJ45 防水格兰头。
 
 :::caution
 请确认逆变器 BMS 通讯接口的引脚定义以及电池 RS485A/CAN 端口的引脚定义是否一致。本产品附带的通讯网线两端为对称线序，如果逆变器与电池的引脚定义不同，需要使用网线压线钳自行制作对应线序的通讯线缆或向逆变器厂商购买适配线缆（如 Victron 逆变器）。
@@ -437,32 +428,19 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Parallel-Power-Connection"></a>
 #### 5.4.1 并联电力连接
 
-如果有多台电池并联使用，需要将电池并联后再与逆变器连接。每台电池有一对正极端子和一对负极端子（M8），每个端子最大承载电流为 200A，因此分两种情况：
-
-- **情况一**：如果逆变器输入输出电流小于 200A，可以用动力线将相邻两台电池的正负极端子相互连接，然后将两端电池连接到逆变器。
-
-- **情况二**：如果逆变器输入输出电流大于 200A，需要将每台电池的正负极端子与汇流排连接，然后将汇流排连接到逆变器。
+如果有多台电池并联使用，需要将每台电池的正负极端子通过动力线与汇流排连接，然后将汇流排连接到逆变器。
 
 :::note
-连接示意图请参考[附录五](#Connection-Diagrams)中的[电池与逆变器连接示意图](#Connection-Diagrams)章节。
+连接示意图请参考[附录四](#Connection-Diagrams)中的[电池与逆变器连接示意图](#Connection-Diagrams)章节。
 :::
 
 <a id="Parallel-Communication-Connection"></a>
 #### 5.4.2 并联通讯连接
 
-多台电池并联时，需要用并联通讯线缆将各电池的 RS485B 与 RS485C 接口依次连接：第一台电池的 RS485B 连接第二台电池的 RS485C，第二台电池的 RS485B 连接第三台电池的 RS485C，以此类推。
+多台电池并联时，需要用并联通讯线缆将各电池的 RS485B 与 RS485C 接口依次连接：第一台电池的 RS485B 连接第二台电池的 RS485C，第二台电池的 RS485B 连接第三台电池的 RS485C，以此类推。室外安装时，并联通讯线缆同样建议使用 RJ45 防水格兰头制作（见[制作防水通讯线缆](#Waterproof-Cable-Assembly)）。
 
 :::note
-并联通讯接线前，请先完成主机与从机的[拨码开关设置](#DIP-Switch-Settings)；本产品也可将所有电池的拨码开关全部拨为 OFF，由系统自动分配地址（自动拨号）。
-:::
-
-:::warning 与 4 位拨码开关版本混用
-如果本产品（6 位拨码开关）与 4 位拨码开关版本的产品并联混用时：
-
-- 不允许使用自动地址分配（自动拨号），所有 6 位拨码开关的产品均须手动拨码
-- 主机必须是 6 位拨码开关的产品
-- 地址 2 ~ 15 的从机可以是 4 位或 6 位拨码开关的产品
-- 地址 16 及以后的从机必须是 6 位拨码开关的产品
+并联通讯连接无需手动设置地址，系统自动分配（自动拨号）。
 :::
 
 <a id="Post-Connection-Inspection"></a>
@@ -470,8 +448,8 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 全部线缆连接完成后，请逐项确认：
 
-- 每完成一处连接后，检查连接是否正确、牢固，无松动或接触不良；所有螺栓、螺丝等紧固件均已完全拧紧
-- 正负极动力线极性正确、端子牢固可靠
+- 每完成一处连接后，检查连接是否正确、牢固，无松动或接触不良；快插端子锁紧到位，紧固件均已完全拧紧
+- 正负极动力线极性正确、连接牢固可靠
 - 防止端子接触裸露导线或金属物体，相邻带电部件应加以遮盖
 - 清除设备周围的异物，尤其是金属碎屑，防止造成短路
 
@@ -491,15 +469,15 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 多台电池并联时，只需设置**主机**电池的通讯协议，从机无需设置。可以通过以下三种方式中的任意一种进行设置：
 
-1. **在屏幕中设置**：通过主机电池的[**显示屏及按键**](#Product-Interface)进入设置菜单，选择与逆变器匹配的通讯协议。
-
-2. **连接电脑上位机设置**：使用 **RS232-USB 通讯线（[05](#Part05)）** 连接 Windows 系统电脑与主机电池，在电脑上位机程序软件中选择与逆变器匹配的通讯协议。
+1. **连接电脑上位机设置**：使用 **RS232-USB 通讯线（[04](#Part04)）** 连接 Windows 系统电脑与主机电池，在电脑上位机程序软件中选择与逆变器匹配的通讯协议。
 
    :::note
    上位机详细操作请参见[参考文件](#Reference-Documents)章节中的《PCBMS软件使用说明》。
    :::
 
-3. **连接手机 APP 设置**：使用 **USB-Type C 数据线（[06](#Part06)）** 连接手机与主机电池，在 Gobel Console APP 中选择与逆变器匹配的通讯协议。
+2. **连接手机 APP 设置**：使用 **USB-Type C 数据线（[05](#Part05)）** 连接手机与主机电池，在 Gobel Console APP 中选择与逆变器匹配的通讯协议。
+
+3. **在 Gobel VRM 平台或 APP 上设置**：电池接入网络后，可在 Gobel VRM 平台或 APP 上选择与逆变器匹配的通讯协议。
 
 :::note WiFi 配置
 电池的 WiFi 配置及在线监控平台接入请参见《WiFi 使用说明书》。
@@ -516,7 +494,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 1. 检查电力连接和通讯连接是否正常，确保各线缆连接牢固、无松动。
 
-2. 按所有电池的 [**ON/OFF 开关**](#Product-Interface)开机（BMS ON），等待电池系统完成自检、[**显示屏**](#Product-Interface)显示正常且无告警。
+2. 按所有电池的 [**ON/OFF 开关**](#Product-Interface)开机（BMS ON），等待电池系统完成自检、[**LED 灯条**](#Product-Interface)显示正常且无告警。
 
 3. 将所有电池的[**断路器**](#Product-Interface)拨到 ON 位置。
 
@@ -557,26 +535,22 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Panel-Indicators"></a>
 ### 7.1 面板状态指示
 
-可通过面板上的指示灯和显示屏了解电池的运行状态：
+可通过面板上的 [**LED 灯条**](#Product-Interface)了解电池的运行状态：
 
 | 部件 | 说明 |
 | :--- | :--- |
-| 开关指示灯（ON/OFF） | 指示电池开关状态 |
-| 运行指示灯（RUN） | 指示电池运行状态 |
-| 告警指示灯（ALM） | 电池故障或告警时点亮 |
-| SOC 指示灯 | 指示电池剩余电量状态 |
-| 显示屏及按键 | 显示电池状态信息，可在屏幕中查看及设置参数 |
+| LED 灯条 | 指示 SOC（剩余电量）、Run（运行）及 Alarm（告警）状态 |
 
-告警指示灯（ALM）点亮时，请及时排查故障原因；无法解决时请联系 Gobel Power 技术支持，常见故障处理方法见[附录一](#Troubleshooting)。
+告警（Alarm）指示点亮时，请及时排查故障原因；无法解决时请联系 Gobel Power 技术支持，常见故障处理方法见[附录一](#Troubleshooting)。
 
 <a id="Host-Software-Monitoring"></a>
 ### 7.2 上位机及远程监控
 
 本产品支持多种监控方式：
 
-1. **电脑上位机监控**：使用 **RS232-USB 通讯线（[05](#Part05)）** 连接 Windows 系统电脑与电池，在电脑上运行电池上位机程序软件，可查看电池电压、电流、温度、SOC 等运行状态。
+1. **电脑上位机监控**：使用 **RS232-USB 通讯线（[04](#Part04)）** 连接 Windows 系统电脑与电池，在电脑上运行电池上位机程序软件，可查看电池电压、电流、温度、SOC 等运行状态。
 
-2. **手机 APP 监控**：使用 **USB-Type C 数据线（[06](#Part06)）** 连接手机与电池，通过 Gobel Console APP 查看电池状态，并可对电池进行一键配置和升级。
+2. **手机 APP 监控**：使用 **USB-Type C 数据线（[05](#Part05)）** 连接手机与电池，通过 Gobel Console APP 查看电池状态，并可对电池进行一键配置和升级。
 
 3. **WiFi 在线监控**：通过电池内置的 [**WiFi 接口**](#Product-Interface)接入网络后，可兼容 Gobel VRM 在线监控平台，并支持接入 Home Assistant、ioBroker 等平台实现远程监控。WiFi 配置方法请参见《WiFi 使用说明书》。
 
@@ -615,8 +589,8 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 - 将电池充满电，然后关闭[**断路器**](#Product-Interface)和 [**ON/OFF 开关**](#Product-Interface)（关闭 BMS）。
 - 至少每 3 个月检查一次电池电压。如果电压低于 51V，需及时充电。
-- 电池应存放于干燥、清洁、通风良好的室内场所，避免阳光直射和雨淋，远离高温热源、明火及易燃易爆物品
-- 存放期间电池应与外部设备完全断开，确保所有指示灯熄灭
+- 电池应存放于干燥、清洁、通风良好的场所，避免阳光直射和雨淋，远离高温热源、明火及易燃易爆物品
+- 存放期间电池应与外部设备完全断开，确保 LED 灯条熄灭
 - 存放区域地面应平整坚实，并配备合格的消防设施（如干粉灭火器、消防沙）
 - 搬运存放时轻拿轻放，禁止跌落、碰撞、翻倒、侧放和倾斜
 
@@ -627,13 +601,13 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Product-Specifications"></a>
 ## 9. 产品规格
 
-<a id="Technical-Parameters"></a>
+<a id="Tech-Specifications"></a>
 ### 9.1 技术参数
 
 | 项目 | 参数 |
 | :--- | :--- |
-| 产品名称 | Gobel PowerFable 16（PCBMS 版） |
-| 产品型号 | GP-SR1-16K-PC200B |
+| 产品名称 | Gobel PowerCarol 16 |
+| 产品型号 | GP-WP1-16K-PC200B |
 | 品牌 | Gobel Power |
 | 产品类型 | 51.2V 314Ah 磷酸铁锂低压储能电池 |
 | **主要参数** | |
@@ -642,7 +616,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 | 并联扩展 | 最多 63 台并联 [2]，严禁串联 |
 | 标称电压 | 51.2V |
 | 工作电压 | 44.8V ~ 58.4V |
-| 标称能量 | 约 16kWh |
+| 标称能量 | 16kWh |
 | 可用能量 | 16kWh [1] |
 | 最大输出功率 | 7.68kW |
 | 充电电流 [3] | 最大持续 150A；峰值 200A（25 秒） |
@@ -650,18 +624,18 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 | 主动均衡 | 是 |
 | **其他参数** | |
 | 最大放电深度 | 100% DOD |
-| 外形尺寸（宽×高×深） | 482.6 × 241.3 × 773mm |
-| 重量 | 120kg |
-| 显示 | 屏幕（SOC、告警、总压、电流、逆变器协议） |
-| 防护等级 | IP21 |
-| 工作温度 | 0°C ~ 50°C |
+| 外形尺寸（宽×高×深） | 477 × 959 × 270 mm |
+| 重量 | 约 125kg |
+| 显示 | LED 灯条（SOC、告警） |
+| 防护等级 | IP65 |
+| 工作温度 | 充电：0°C ~ 55°C；放电：-20°C ~ 55°C |
 | 存放温度 | 0°C ~ 35°C |
-| 相对湿度 | ≤95% RH（无凝露） |
+| 相对湿度 | 95%（无凝露） |
 | 海拔 | ≤3000m |
 | 循环寿命 | ≥8000 次（25°C±2°C，70% EOL） |
 | 电气隔离保护 | 内置断路器 |
-| 安装方式 | 机架安装 / 堆叠安装（≤3 层）/ 落地安装（可选固定墙体），底部带脚轮 |
-| 通讯接口 | RS485A/CAN（逆变器）、RS485B/RS485C（并联）、RS232（电脑/手机）、WiFi（在线监控）、干接点（DRY） |
+| 安装方式 | 落地式（带脚轮和把手） |
+| 通讯接口 | CAN、RS485、RS232、WiFi |
 | 能量吞吐 | 50MWh [4] |
 
 [1] 测试条件：25°C±2°C，生命周期初期（BOL），0.5C 充电 / 0.5C 放电，100% DOD。
@@ -672,7 +646,7 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 <a id="Product-Dimensions"></a>
 ### 9.2 产品尺寸图
 
-![Gobel PowerFable 16 产品尺寸图](images/gp-sr1-16k-pc200b-dimension.jpg)
+![Gobel PowerCarol 16 产品尺寸图](images/gp-wp1-16k-pc200b-dimension.jpg)
 
 <a id="Appendix"></a>
 ## 附录
@@ -684,10 +658,11 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 | :--- | :--- | :--- |
 | 逆变器无法读取电池数据 | 通讯线缆连接松动或断路；两端引脚定义不匹配；通讯协议设置错误 | 检查通讯线缆连接；核对两端引脚定义（见[附录三](#Communication-Pin-Definitions)）；重新设置通讯协议（见[逆变器通讯协议设置](#Protocol-Settings)） |
 | 开箱测得端子电压异常（低于 40V 或高于 58V） | 电量过低或产品异常 | 请勿继续安装或使用，联系 Gobel Power 技术支持 |
-| 告警指示灯（ALM）点亮 | 电池故障或告警 | 停止使用并排查故障原因，必要时联系 Gobel Power 技术支持 |
+| 告警（Alarm）指示点亮 | 电池故障或告警 | 停止使用并排查故障原因，必要时联系 Gobel Power 技术支持 |
 | 电池外壳变形、漏液或异常发热 | 电池内部异常 | 立即停止使用并联系技术支持，处置方法见[附录二](#Emergency-Handling) |
 | WiFi 或手机 APP 无法连接电池 | WiFi 未配置或配置错误 | 参见《WiFi 使用说明书》重新配置 |
 | 长期存放后电压低于 51V | 存放期间自放电 | 及时充电后再投入使用（见[长期存放](#Storage-Precautions)） |
+| 快插端子连接处异常发热 | 端子未插紧到位或压接不良 | 断电后重新插紧端子，必要时按[制作动力线缆](#Power-Cable-Assembly)重新压接 |
 
 <a id="Emergency-Handling"></a>
 ### 附录二 应急处理
@@ -741,31 +716,18 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 
 ![RS485A/CAN 端口引脚定义](images/rs485a-can-pin.jpg)
 
-**RS485A 模式引脚定义：**
+**RS485A/CAN 模式引脚定义：**
 
 | 引脚 | 定义 |
 | :--: | :--: |
 | 1 | B |
 | 2 | A |
 | 3 | GND |
-| 4 | NC |
-| 5 | NC |
+| 4 | CAN-H |
+| 5 | CAN-L |
 | 6 | GND |
 | 7 | A |
 | 8 | B |
-
-**CAN 模式引脚定义：**
-
-| 引脚 | 定义 |
-| :--: | :--: |
-| 1 | NC |
-| 2 | GND |
-| 3 | NC |
-| 4 | CAN-H |
-| 5 | CAN-L |
-| 6 | NC |
-| 7 | NC |
-| 8 | NC |
 
 <a id="RS232-Port"></a>
 #### RS232 端口
@@ -797,100 +759,23 @@ keywords: [Gobel Power, GP-SR1-16K-PC200B, PowerFable 16, PCBMS, 磷酸铁锂, �
 | 7 | A |
 | 8 | B |
 
-<a id="DIP-Switch-Settings"></a>
-### 附录四 拨码开关设置表
-
-本产品拨码开关（ADS）的地址范围为 0 ~ 63：地址 0（全部 OFF）为自动地址分配模式（自动拨号），地址 1 为主机，地址 2 ~ 63 为从机。
-
-![6 位拨码开关设置表](images/adress-dial-6bit.jpg)
-
-<a id="DIP-6bit"></a>
-#### 6 位拨码开关设置表
-
-| 地址 | #1 | #2 | #3 | #4 | #5 | #6 | 说明 |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| 0 | OFF | OFF | OFF | OFF | OFF | OFF | 自动地址分配 |
-| 1 | ON | OFF | OFF | OFF | OFF | OFF | 主机 |
-| 2 | OFF | ON | OFF | OFF | OFF | OFF | 从机 |
-| 3 | ON | ON | OFF | OFF | OFF | OFF | 从机 |
-| 4 | OFF | OFF | ON | OFF | OFF | OFF | 从机 |
-| 5 | ON | OFF | ON | OFF | OFF | OFF | 从机 |
-| 6 | OFF | ON | ON | OFF | OFF | OFF | 从机 |
-| 7 | ON | ON | ON | OFF | OFF | OFF | 从机 |
-| 8 | OFF | OFF | OFF | ON | OFF | OFF | 从机 |
-| 9 | ON | OFF | OFF | ON | OFF | OFF | 从机 |
-| 10 | OFF | ON | OFF | ON | OFF | OFF | 从机 |
-| 11 | ON | ON | OFF | ON | OFF | OFF | 从机 |
-| 12 | OFF | OFF | ON | ON | OFF | OFF | 从机 |
-| 13 | ON | OFF | ON | ON | OFF | OFF | 从机 |
-| 14 | OFF | ON | ON | ON | OFF | OFF | 从机 |
-| 15 | ON | ON | ON | ON | OFF | OFF | 从机 |
-| 16 | OFF | OFF | OFF | OFF | ON | OFF | 从机 |
-| 17 | ON | OFF | OFF | OFF | ON | OFF | 从机 |
-| 18 | OFF | ON | OFF | OFF | ON | OFF | 从机 |
-| 19 | ON | ON | OFF | OFF | ON | OFF | 从机 |
-| 20 | OFF | OFF | ON | OFF | ON | OFF | 从机 |
-| 21 | ON | OFF | ON | OFF | ON | OFF | 从机 |
-| 22 | OFF | ON | ON | OFF | ON | OFF | 从机 |
-| 23 | ON | ON | ON | OFF | ON | OFF | 从机 |
-| 24 | OFF | OFF | OFF | ON | ON | OFF | 从机 |
-| 25 | ON | OFF | OFF | ON | ON | OFF | 从机 |
-| 26 | OFF | ON | OFF | ON | ON | OFF | 从机 |
-| 27 | ON | ON | OFF | ON | ON | OFF | 从机 |
-| 28 | OFF | OFF | ON | ON | ON | OFF | 从机 |
-| 29 | ON | OFF | ON | ON | ON | OFF | 从机 |
-| 30 | OFF | ON | ON | ON | ON | OFF | 从机 |
-| 31 | ON | ON | ON | ON | ON | OFF | 从机 |
-| 32 | OFF | OFF | OFF | OFF | OFF | ON | 从机 |
-| 33 | ON | OFF | OFF | OFF | OFF | ON | 从机 |
-| 34 | OFF | ON | OFF | OFF | OFF | ON | 从机 |
-| 35 | ON | ON | OFF | OFF | OFF | ON | 从机 |
-| 36 | OFF | OFF | ON | OFF | OFF | ON | 从机 |
-| 37 | ON | OFF | ON | OFF | OFF | ON | 从机 |
-| 38 | OFF | ON | ON | OFF | OFF | ON | 从机 |
-| 39 | ON | ON | ON | OFF | OFF | ON | 从机 |
-| 40 | OFF | OFF | OFF | ON | OFF | ON | 从机 |
-| 41 | ON | OFF | OFF | ON | OFF | ON | 从机 |
-| 42 | OFF | ON | OFF | ON | OFF | ON | 从机 |
-| 43 | ON | ON | OFF | ON | OFF | ON | 从机 |
-| 44 | OFF | OFF | ON | ON | OFF | ON | 从机 |
-| 45 | ON | OFF | ON | ON | OFF | ON | 从机 |
-| 46 | OFF | ON | ON | ON | OFF | ON | 从机 |
-| 47 | ON | ON | ON | ON | OFF | ON | 从机 |
-| 48 | OFF | OFF | OFF | OFF | ON | ON | 从机 |
-| 49 | ON | OFF | OFF | OFF | ON | ON | 从机 |
-| 50 | OFF | ON | OFF | OFF | ON | ON | 从机 |
-| 51 | ON | ON | OFF | OFF | ON | ON | 从机 |
-| 52 | OFF | OFF | ON | OFF | ON | ON | 从机 |
-| 53 | ON | OFF | ON | OFF | ON | ON | 从机 |
-| 54 | OFF | ON | ON | OFF | ON | ON | 从机 |
-| 55 | ON | ON | ON | OFF | ON | ON | 从机 |
-| 56 | OFF | OFF | OFF | ON | ON | ON | 从机 |
-| 57 | ON | OFF | OFF | ON | ON | ON | 从机 |
-| 58 | OFF | ON | OFF | ON | ON | ON | 从机 |
-| 59 | ON | ON | OFF | ON | ON | ON | 从机 |
-| 60 | OFF | OFF | ON | ON | ON | ON | 从机 |
-| 61 | ON | OFF | ON | ON | ON | ON | 从机 |
-| 62 | OFF | ON | ON | ON | ON | ON | 从机 |
-| 63 | ON | ON | ON | ON | ON | ON | 从机 |
-
 <a id="Connection-Diagrams"></a>
-### 附录五 电池与逆变器连接示意图
+### 附录四 电池与逆变器连接示意图
 
 **单台电池与逆变器连接示意图**
 
-![单台电池与逆变器连接示意图](images/single-connection-with-inverter.jpg)
+![单台电池与逆变器连接示意图](images/gp-wp1-16k-pc200b-single-pack-with-inverter.jpg)
 
 :::note
-图中实线为正极动力线和负极动力线，点线为通讯线缆。
+图中实线为动力线缆，点线为通讯线缆。
 :::
 
 **多台电池与逆变器连接示意图**
 
-![多台电池与逆变器连接示意图](images/multi-connection-with-inverter.jpg)
+![多台电池与逆变器连接示意图](images/gp-wp1-16k-pc200b-multi-pack-with-inverter.jpg)
 
 :::note
-图中实线为正极动力线、负极动力线及汇流排，点线为逆变器通讯线缆，点划线（-.-.-）为电池并联通讯线缆。
+图中实线为动力线缆及汇流排，点线为逆变器通讯线缆，点划线（-.-.-）为电池并联通讯线缆。
 :::
 
 <a id="Reference-Documents"></a>
