@@ -7,6 +7,8 @@ keywords: [Gobel Power, PowerCarol 16, GP-WP1-16K-PC200B, waterproof, IP65, LiFe
 
 # Gobel PowerCarol 16 Product Introduction
 
+![Gobel PowerCarol 16 energy storage battery](images/gp-wp1-16k-pc200b.jpg)
+
 PowerCarol 16 is a 51.2V 314Ah (approx. 16kWh) LiFePO4 low-voltage energy storage battery from Gobel Power. It uses high-performance 314Ah LiFePO4 battery cells in a floor-standing structure with casters on the bottom and handles on the sides. With IP65 ingress protection, it can be installed both indoors and outdoors. Equipped with a high-performance battery management system (BMS) that provides comprehensive monitoring and protection of the battery, it is suitable for household and small commercial & industrial energy storage scenarios.
 
 ## Product Features
