@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Product Overview
+sidebar_label: Introduction
 description: Product introduction to the Gobel PowerCarol 16 series 51.2V 314Ah LiFePO4 low-voltage energy storage battery
 keywords: [Gobel Power, PowerCarol 16, GP-WP1-16K-PC200B, waterproof, IP65, LiFePO4, energy storage battery]
 ---
