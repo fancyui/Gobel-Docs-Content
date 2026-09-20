@@ -1,6 +1,6 @@
 ---
-sidebar_position: 4
-sidebar_label: Quick Installation Guide
+sidebar_position: 2
+sidebar_label: Quick Guide
 toc_min_heading_level: 2
 description: Gobel Power 51.2V 314Ah LiFePO4 low-voltage energy storage battery quick installation guide
 keywords: [Gobel Power, GP-WP1-16K-PC200B, PowerCarol 16, waterproof, IP65, LiFePO4, energy storage battery, quick installation]
